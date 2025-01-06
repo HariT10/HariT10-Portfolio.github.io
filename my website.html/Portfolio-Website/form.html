@@ -1,0 +1,105 @@
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" >
+
+    <!--TOP MENU-->
+
+
+    <header>
+        <div class = "header" id = "myHeader">
+            <h1>Alka's Jewellery Store</h1>
+            <img src="Jewl Logo2.png">
+            <button class="menuButton" aria-label="toggel"></button>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Jewellery</a></li><!--"#First"-->
+                    <li><a href="form.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+</head>
+
+<body>
+
+    <div class="contact-cont">
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+
+            <div class="contact-left-title">
+                <h2> Get in Touch!</h2>
+
+            </div>
+
+            <input type="hidden" name="access_key" value="f2ee6a40-66d0-483b-8ba7-0180b762fa93">
+
+            <input type="text" name="name" placeholder="Enter Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Enter Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Enter Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+<Section id= "Third"> 
+
+    <footer class="footer">
+        <div class="logo-container">
+            <a href="#top">
+                <img src="Jewl Logo2.png" alt="Your Logo" class="footer-logo">
+            </a>
+        </div>
+      
+       
+    
+    
+        <div class="footer-contact">
+            <p>Email: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+            <p>Phone: <a href="tel:+123456789">+1 234 567 89</a></p>
+            
+        </div>
+        <p>© 2024 Alka Jewellery. All rights reserved.</p>
+    </footer>
+    
+    </Section>
+    
+    
+    
+        <script>
+    
+        document.querySelector('.menuButton').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('nav-active');
+        });
+    
+        </script>
+    
+
+
+
+</body>
+
+
+
+
+
+</html>
