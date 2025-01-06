@@ -1,5 +1,7 @@
 @media screen and (max-width: 920px){
 
+
+
   body{
     background-color: white;
     /*background-image: url(4907157.jpg);*/
@@ -7,9 +9,14 @@
     background-attachment: fixed;
     overflow: auto;
 
+
+    width: 100%;
+
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scrolling */
+    box-sizing: border-box;
+
 
   }
 
@@ -17,6 +24,7 @@
   .image1{
     width: 300px;
     height: 200px;
+    overflow-x: hidden;
   }
 
 
@@ -36,6 +44,10 @@ nav{
 
   background-color: #bbeeff;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+
+  overflow-x: hidden;
+  
+
 }
   
 /* ROW HEADER */
@@ -43,7 +55,8 @@ nav{
 nav ul li{
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 12px;
+  
 
 }
 
@@ -52,8 +65,9 @@ nav ul li{
 nav ul li a {
   color: #000000;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
+  overflow-x: hidden;
 }
 
 
@@ -80,7 +94,7 @@ nav ul li a:hover::after{
   align-items: center;
   height: 60vh;
   text-align: center;
-
+  overflow-x: hidden;
 
 }
 
@@ -90,6 +104,7 @@ nav ul li a:hover::after{
   font-size: 30px;
   margin-top: -150px;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .me1 h1{
@@ -98,6 +113,8 @@ nav ul li a:hover::after{
 
   font-size: 20px;
 
+  overflow-x: hidden;
+
 }
 
 .me1 p{
@@ -105,6 +122,8 @@ nav ul li a:hover::after{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
   font-size: 20px;
+
+  overflow-x: hidden;
 
 }
 
@@ -120,6 +139,7 @@ nav ul li a:hover::after{
 
   transition: transform 0.4s ease, box - shawdow 0.4s ease;
 
+  overflow-x: hidden;
 
 
 }
@@ -129,6 +149,7 @@ nav ul li a:hover::after{
   transform: translateY(-10px); /* Move the image up by 10px */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
 
+  overflow-x: hidden;
 
 }
 
@@ -149,6 +170,7 @@ nav ul li a:hover::after{
   align-items: center;
   height: 55vh;
 
+  overflow-x: hidden;
 
 }
 
@@ -156,6 +178,8 @@ nav ul li a:hover::after{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 40px;
   margin-top: 50px;
+
+  overflow-x: hidden;
 }
 
 
@@ -175,6 +199,9 @@ nav ul li a:hover::after{
 
   padding: 30px;
 
+  overflow-x: hidden;
+  
+
 }
 
 .me {
@@ -182,12 +209,17 @@ nav ul li a:hover::after{
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
   margin-top: -280px;
+
 }
 
 .me img {
   width: 190px;
   height: auto;
   border: 5px solid #bbeeff;
+  padding: 0; /* Remove excessive padding */
+  margin: 0; /* Reset margin */
+
+  
 }
 
 
@@ -206,13 +238,13 @@ nav ul li a:hover::after{
 
   font-size: 40px;
   margin-top: 200px;
+
 }
 
 
 
 .thumbnail-rows{
 
-  
 
 }
 
@@ -234,11 +266,13 @@ nav ul li a:hover::after{
   border-radius: 10px; 
 
   margin-top: -200px;
+
   
 }
 
 .description1{
   display: none;
+
 }
 
 
@@ -248,6 +282,7 @@ nav ul li a:hover::after{
   margin-top: -110px;
   color: #555;
   text-align: center;
+
 }
 
 
@@ -263,16 +298,20 @@ nav ul li a:hover::after{
   align-items: center;
   margin: 0 auto;
 
+  
+
 }
 
 .thumbnail-container2 img{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
+  
 }
 
 
 .description2 {
   display: none;
+  
 }
 
 
@@ -285,6 +324,7 @@ nav ul li a:hover::after{
   color: #555;
   text-align: center;
 
+  
 }
 
 .thumbnail-container3{
@@ -299,17 +339,23 @@ nav ul li a:hover::after{
   align-items: center;
   margin: 0 auto;
 
+  
+
 
 }
 
 .thumbnail-container3 img{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
+
+  
 }
 
 
 .description3 {
   display: none;
+
+  
 }
 
 .description30{
@@ -321,6 +367,7 @@ nav ul li a:hover::after{
   color: #555;
   text-align: center;
 
+  
 
 }
 
@@ -332,6 +379,7 @@ nav ul li a:hover::after{
   margin-left: 100px;
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
+  
 }
 
 #section2 p{
@@ -342,6 +390,7 @@ nav ul li a:hover::after{
   margin-left: 100px;
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
+  
 
 }
 
@@ -355,12 +404,14 @@ nav ul li a:hover::after{
   height: 55vh;
 
 
+  
 }
 
 #section3 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 40px;
   margin-top: 300px;
+  
 }
 
 
@@ -391,6 +442,7 @@ nav ul li a:hover::after{
   margin: 0 auto;
 
   
+  
 }
 
 .drone img{
@@ -399,10 +451,12 @@ nav ul li a:hover::after{
 
   margin-top: -200px;
   
+  
 }
 
 .d1{
   display: none;
+  overflow-x: hidden;
 }
 
 
@@ -412,6 +466,7 @@ nav ul li a:hover::after{
   margin-top: -110px;
   color: #555;
   text-align: center;
+  overflow-x: hidden;
 }
 
 
@@ -426,6 +481,8 @@ nav ul li a:hover::after{
   justify-content: center; /* Centers content horizontally */
   align-items: center;
   margin: 0 auto;
+
+  
 
 }
 
@@ -561,9 +618,10 @@ nav ul li a:hover::after{
 }
 
 .image img {
-  width: 390px;
+  width: 320px;
   height: auto;
   border: 5px solid #bbeeff;
+  
 }
 
 
@@ -1109,6 +1167,14 @@ nav ul li a:hover::after{
   width: 170px; /* Adjust based on your logo size */
   margin-bottom: 10px; /* Space below logo */
 }
+
+
+  
+
+
+
+  
+
 
 
   
