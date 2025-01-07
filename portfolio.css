@@ -245,22 +245,25 @@ nav ul li a:hover::after{
 
 .thumbnail-rows{
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
+
+  margin-top: -30px;
 
 
 }
 
 .thumbnail-container1{
 
-  width: 40%;
+  width: 60%;
   padding: 0;
+
+  flex-direction: column;
   
-  display: flex; /* Enables Flexbox for alignment */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center;
+  
   margin: 0 auto;
+
+
+  margin-bottom: 150px;
 
   
 }
@@ -269,7 +272,8 @@ nav ul li a:hover::after{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
 
-  margin-top: -200px;
+
+  width: 100%
 
   
 }
@@ -283,9 +287,10 @@ nav ul li a:hover::after{
 /* Description text */
 .description10 {
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: -110px;
+ 
   color: #555;
   text-align: center;
+
 
 }
 
@@ -293,14 +298,16 @@ nav ul li a:hover::after{
 .thumbnail-container2{
 
 
-  width: 50%;
-  padding: 130px;
-  margin-top: -100px;
+  width: 60%;
+  padding: 0;
 
-  display: flex; /* Enables Flexbox for alignment */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center;
+  flex-direction: column;
+  
+  
   margin: 0 auto;
+
+
+  margin-bottom: 150px;
 
   
 
@@ -309,6 +316,8 @@ nav ul li a:hover::after{
 .thumbnail-container2 img{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
+
+  margin-top: 100px;
   
 }
 
@@ -334,14 +343,16 @@ nav ul li a:hover::after{
 .thumbnail-container3{
 
 
-  width: 50%;
-  padding: 130px;
-  margin-top: -100px;
+  width: 60%;
+  padding: 0;
 
-  display: flex; /* Enables Flexbox for alignment */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center;
+  flex-direction: column;
+  
+  
   margin: 0 auto;
+
+
+  margin-bottom: 150px;
 
   
 
@@ -351,6 +362,9 @@ nav ul li a:hover::after{
 .thumbnail-container3 img{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
+
+
+  margin-top: 100px;
 
   
 }
@@ -423,27 +437,31 @@ nav ul li a:hover::after{
 
 .projects-row{
 
+  display: block;
+
+  margin-top: -30px;
+
   
 
 }
 
 
-.projects-row img{
 
-
-}
 
 
 
 .drone{
 
-  width: 30%; /* Adjust the width to fit within the row */
-  margin: 0 auto;
-  padding: 0; /* Remove padding */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 60%;
+  padding: 0;
 
+  flex-direction: column;
+  
+  
+  margin: 0 auto;
+
+
+  margin-bottom: 150px;
   
   
 }
@@ -452,7 +470,8 @@ nav ul li a:hover::after{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
 
-  margin-top: -200px;
+
+  width: 100%
   
   
 }
@@ -476,12 +495,16 @@ nav ul li a:hover::after{
 .ePortfolio{
 
 
-  width: 30%; /* Adjust the width to fit within the row */
+  width: 60%;
+  padding: 0;
+
+  flex-direction: column;
+  
+  
   margin: 0 auto;
-  padding: 0; /* Remove padding */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+  margin-bottom: 150px;
 
   
 
@@ -490,6 +513,8 @@ nav ul li a:hover::after{
 .ePortfolio img{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
+
+  margin-top: 100px;
 }
 
 
@@ -513,12 +538,16 @@ nav ul li a:hover::after{
 .project{
 
 
-  width: 30%; /* Adjust the width to fit within the row */
+  width: 60%;
+  padding: 0;
+
+  flex-direction: column;
+  
+  
   margin: 0 auto;
-  padding: 0; /* Remove padding */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+  margin-bottom: 150px;
 
 
 }
@@ -526,6 +555,10 @@ nav ul li a:hover::after{
 .project img{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
+
+
+  margin-top: 100px;
+  
 }
 
 
@@ -1166,6 +1199,16 @@ nav ul li a:hover::after{
   width: 170px; /* Adjust based on your logo size */
   margin-bottom: 10px; /* Space below logo */
 }
+
+
+  
+
+
+
+  
+
+
+
 
 
   
