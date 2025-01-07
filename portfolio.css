@@ -182,24 +182,30 @@ nav ul li a:hover::after{
   overflow-x: hidden;
 }
 
+.aboutMe{
+
+  margin-top: -220px;
+}
+
 
 .aboutMe p{
 
   display: flex; /* Enables Flexbox for alignment */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  height: 100vh; /* Sets the height to fill the viewport */
-  text-align: center; /* Ensures the text is centered within the box */
+  text-align: justify; /* Ensures the text is centered within the box */
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  font-size: 14px;
-  margin-top: -530px;
+  font-size: 13px;
 
   align-items: center;
 
-  padding: 30px;
+  padding: 50px;
 
   overflow-x: hidden;
+
+  margin-bottom: -50px;
+
   
 
 }
@@ -208,7 +214,7 @@ nav ul li a:hover::after{
   display: flex; /* Enables Flexbox for alignment */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  margin-top: -280px;
+  margin-top: 180px;
 
 }
 
@@ -836,9 +842,14 @@ nav ul li a:hover::after{
   font-size: 18px;
   margin-top: -120px;
 
-  text-align: left;
 
-  margin-left: 100px;
+  width: 55%;
+
+  text-align: justify;
+
+  margin-left: 90px;
+
+  margin-bottom: 150px;
 
 
 }
@@ -849,7 +860,7 @@ nav ul li a:hover::after{
   
   
   margin-left: 1050px;
-  margin-bottom: -10px;
+  margin-top: -500px;
   border: 5px solid #bbeeff;
 
 }
@@ -1207,16 +1218,6 @@ nav ul li a:hover::after{
 
   
 
-
-
-
-
-  
-  
-
-
-
-  
 
 
 
