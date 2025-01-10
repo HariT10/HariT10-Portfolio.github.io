@@ -183,17 +183,23 @@ nav ul li a:hover::after{
 }
 
 .aboutMe{
+   
 
-  margin-top: -70px;
+
 }
 
 
-.aboutMe p{
 
-  display: flex; /* Enables Flexbox for alignment */
+
+.text{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  text-align: justify;
+
+  display:block; /* Enables Flexbox for alignment */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  text-align: justify; /* Ensures the text is centered within the box */
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 13px;
@@ -204,11 +210,18 @@ nav ul li a:hover::after{
 
   overflow-x: hidden;
 
-  margin-bottom: -850px;
 
-  
+  margin-top: -120px;
 
 }
+
+
+.text p{
+
+  margin-bottom: -20px;
+
+}
+
 
 .me {
   display: flex; /* Enables Flexbox for alignment */
