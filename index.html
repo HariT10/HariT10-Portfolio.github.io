@@ -14,20 +14,54 @@
 <!--TOP MENUE-->
 
 <header>
-    <div id = "top-header">
-        <nav>
-            <ul>
-                <li><a href="#section1">Home</a></li>
-                <li><a href="#section0">About Me</a></li>
-                <li><a href="#section12">Projects</a></li>
-                <li><a href="#Third">Contact</a></li>
 
-                <!--<li class="logo"><img src="HT LOGO.png"></li> -->
-            </ul>
-        </nav>
+    <div class = "header" id = "myHeader">
+         <!-- Menu Button -->
+        <div class="menu-button" onclick="toggleMenu()" aria-label="Toggle Menu">
+            <div class="menuButton"></div>
+            <div class="menuButton"></div>
+            <div class="menuButton"></div>
+        </div>
+
+        <div id = "top-header">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section0">About Me</a></li>
+                    <li><a href="#section12">Projects</a></li>
+                    <li><a href="#Third">Contact</a></li>
+
+                    <!--<li class="logo"><img src="HT LOGO.png"></li> -->
+                </ul>
+            </nav>
+
+        </div>
 
     </div>
+
 </header>
+
+<script>
+
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu'); // Target the menu
+    menu.classList.toggle('show'); // Add/remove the 'show' class
+}
+
+function closeMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.remove('show');
+}
+
+// Add event listeners to all menu links
+const menuLinks = document.querySelectorAll('.nav-menu a'); // Get all menu links
+menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu); // Close the menu when a link is clicked
+});
+
+
+</script>
+  
 
 
 <!--
