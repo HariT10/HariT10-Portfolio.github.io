@@ -304,6 +304,10 @@ nav ul li a:hover::after{
   
 }
 
+.thumbnail-container1 p{
+  
+}
+
 .description1{
   display: none;
 
@@ -317,6 +321,20 @@ nav ul li a:hover::after{
   color: #555;
   text-align: center;
 
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 20px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+
+
+}
+
+.thumbnail-container1 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+  margin-top: 10px;
 
 }
 
@@ -347,6 +365,13 @@ nav ul li a:hover::after{
   
 }
 
+.thumbnail-container2 p{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
 
 .description2 {
   display: none;
@@ -357,13 +382,14 @@ nav ul li a:hover::after{
 
 .description20{
 
-  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: -110px;
+  
 
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
   color: #555;
   text-align: center;
+  font-weight:bolder;
 
-  
 }
 
 .thumbnail-container3{
@@ -395,6 +421,14 @@ nav ul li a:hover::after{
   
 }
 
+.thumbnail-container3 p {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  text-align: center;
+
+  margin-top: 10px;
+}
+
 
 .description3 {
   display: none;
@@ -406,11 +440,10 @@ nav ul li a:hover::after{
 
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: -110px;
-
+  margin-top: 10px;
   color: #555;
   text-align: center;
-
+  font-weight:bolder;
   
 
 }
@@ -1043,6 +1076,14 @@ nav ul li a:hover::after{
   border-radius: 10px; 
 }
 
+.thumbnail-container1 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+
+
+}
+
 
 
 .thumbnail-container2{
@@ -1058,6 +1099,15 @@ nav ul li a:hover::after{
   border-radius: 10px; 
 }
 
+.thumbnail-container2 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+
+
+}
+
+
 .thumbnail-container3{
 
 
@@ -1069,6 +1119,14 @@ nav ul li a:hover::after{
 .thumbnail-container3 img{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
+}
+
+.thumbnail-container3 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+
+
 }
 
 
@@ -1171,7 +1229,7 @@ nav ul li a:hover::after{
 .drone{
 
   width: 20%;
-  padding: 20px;
+  padding: 90px;
 
   
 }
@@ -1179,6 +1237,15 @@ nav ul li a:hover::after{
 .drone img{
   border: 5px solid black; /* Change 'black' to your desired color */
   border-radius: 10px; 
+  
+}
+
+.d1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
 }
 
 
@@ -1186,7 +1253,7 @@ nav ul li a:hover::after{
 
 
   width: 20%;
-  padding: 20px;
+  padding: 90px;
 
 }
 
@@ -1195,13 +1262,21 @@ nav ul li a:hover::after{
   border-radius: 10px; 
 }
 
+.d2{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
+
 
 
 .project{
 
 
   width: 20%;
-  padding: 20px;
+  padding: 90px;
 
 }
 
@@ -1210,6 +1285,14 @@ nav ul li a:hover::after{
   border-radius: 10px; 
 }
 
+
+.d3{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
 
 
 
@@ -1426,11 +1509,12 @@ nav ul li a:hover::after{
   width: 170px; /* Adjust based on your logo size */
   margin-bottom: 10px; /* Space below logo */
 }
+
+
   
 
 
 
-  
 
 
 
