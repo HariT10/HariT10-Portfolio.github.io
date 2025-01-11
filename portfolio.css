@@ -101,7 +101,7 @@ nav ul li a:hover::after{
 #section1 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-  font-size: 30px;
+  font-size: 25px;
   margin-top: -150px;
   align-items: center;
   overflow-x: hidden;
@@ -121,15 +121,15 @@ nav ul li a:hover::after{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-  font-size: 20px;
+  font-size: 15px;
 
   overflow-x: hidden;
 
 }
 
 .profile-pic2 {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%; 
   align-items: center;
 
@@ -176,13 +176,19 @@ nav ul li a:hover::after{
 
 #section0 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 50px;
 
   overflow-x: hidden;
 }
 
 .aboutMe{
+
+  flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers content */
+    margin-top: -100px; /* Adjust spacing if needed */
+   padding-bottom: 1000px;
+
    
 
 
@@ -197,28 +203,28 @@ nav ul li a:hover::after{
 
   text-align: justify;
 
-  display:block; /* Enables Flexbox for alignment */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
+ 
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 13px;
 
-  align-items: center;
-
-  padding: 50px;
-
-  overflow-x: hidden;
 
 
-  margin-top: -120px;
+  padding: 40px;
+
+
+
+  margin-top: -200px;
 
 }
 
 
 .text p{
 
-  margin-bottom: -20px;
+  text-align: justify;
+  margin-bottom: -800px;
+  
+
 
 }
 
@@ -227,7 +233,7 @@ nav ul li a:hover::after{
   display: flex; /* Enables Flexbox for alignment */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  margin-top: 180px;
+  margin-top: 100px;
 
 }
 
@@ -256,8 +262,8 @@ nav ul li a:hover::after{
 #section12 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-  font-size: 40px;
-  margin-top: 200px;
+  font-size: 30px;
+  margin-top: -2100px;
 
 }
 
@@ -267,7 +273,7 @@ nav ul li a:hover::after{
 
   display: block;
 
-  margin-top: -30px;
+  margin-top: -1200px;
 
 
 }
@@ -447,7 +453,7 @@ nav ul li a:hover::after{
 
 #section3 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 300px;
   
 }
@@ -611,7 +617,7 @@ nav ul li a:hover::after{
 
 #section5 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  font-size: 25px;
+  font-size: 21px;
   margin-top: 300px;
 }
 
@@ -630,8 +636,8 @@ nav ul li a:hover::after{
 
 .c{
 
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -659,13 +665,13 @@ nav ul li a:hover::after{
   justify-content: center;
   margin-top: 40px;
   
-  gap: 50px
+  gap: 20px
 
 }
 
 .tools{
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -673,7 +679,7 @@ nav ul li a:hover::after{
   border-radius: 40%; /* Makes the icon circular */
   transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
 
 }
 
@@ -700,13 +706,9 @@ nav ul li a:hover::after{
 #section6 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-  font-size: 40px;
-  margin-top: 300px;
+  font-size: 30px;
+  margin-top: 50px;
 }
-
-
-
-
 
 
 
@@ -728,6 +730,10 @@ nav ul li a:hover::after{
 
 
 
+
+
+
+
 .text p{
 
   display: flex; /* Enables Flexbox for alignment */
@@ -738,7 +744,7 @@ nav ul li a:hover::after{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 14px;
-  margin-top: -430px;
+  margin-top: -490px;
 
   align-items: center;
 
@@ -750,11 +756,11 @@ nav ul li a:hover::after{
   display: flex; /* Enables Flexbox for alignment */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  margin-top: -280px;
+  margin-top: 100px;
 }
 
 .image img {
-  width: 320px;
+  width: 290px;
   height: auto;
   border: 5px solid #bbeeff;
   
@@ -1420,6 +1426,14 @@ nav ul li a:hover::after{
   width: 170px; /* Adjust based on your logo size */
   margin-bottom: 10px; /* Space below logo */
 }
+
+
+  
+
+
+
+  
+
 
 
   
