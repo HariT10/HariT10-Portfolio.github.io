@@ -1498,6 +1498,9 @@ nav ul li a:hover::after{
 
 
 
+a{
+  text-decoration: none;
+}
 
 
 .footer-contact a:hover {
