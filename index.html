@@ -1,367 +1,1512 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Harishan's Portfolio </title>
-        <link rel="stylesheet" href="portfolio.css" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-
-    </head>
-
-    
+@media screen and (max-width: 920px){
 
 
-<!--TOP MENUE-->
 
-<header>
-    <div id = "top-header">
-        <nav>
-            <ul>
-                <li><a href="#section1">Home</a></li>
-                <li><a href="#section0">About Me</a></li>
-                <li><a href="#section12">Projects</a></li>
-                <li><a href="#Third">Contact</a></li>
-
-                <!--<li class="logo"><img src="HT LOGO.png"></li> -->
-            </ul>
-        </nav>
-
-    </div>
-</header>
+  body{
+    background-color: white;
+    /*background-image: url(4907157.jpg);*/
+    background-size: 100% auto;
+    background-attachment: fixed;
+    overflow: auto;
 
 
-<!--
+    width: 100%;
 
-<div class="image-container">
-
-    <img src="picture 1.png" alt="Image description" >
-    
-</div>
-
--->
-
-<section id="section1">
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    box-sizing: border-box;
 
 
-    <!--<h1>Hi, I'm <span class="different-colour">Harishan Thilakanathan</span>, and this is my Website!</h1> -->
-    <div class="me1">
+  }
 
-        <h1>Welcome to my Portfolio <br>Harishan T</h1>
+  /* PICUTRE */
+  .image1{
+    width: 300px;
+    height: 200px;
+    overflow-x: hidden;
+  }
 
-        <p>Follow the Journey!</p>
-
-        <img src="me.jpeg" alt="Profile" class="profile-pic2">
 
 
-    </div>
-    
+/* HEADER */
+
+nav{
+ 
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*margin-left: 50px;*/
+  /*margin-top: 10px;*/
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  /*font-family: 'Courier New', Courier, monospace;*/
+
+  background-color: #bbeeff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+
+  overflow-x: hidden;
   
 
-
-
-    <!--<p> Software Engineering student at the University of Guelph</p>-->
-
-    <img src="me.jpeg" alt="Profile" class="profile-pic">
-
-
-</section>
-
-
-
-<section id="section0">
-
-    <h1>about me</h1>
-
-</section>
-
-
-<div class="aboutMe">
-
-    <div class="text">
-
-        <p> Hi, my name is Harishan Thilakanathan and this is my portfolio website. I will be 
-            using this website to showcase various projects, experiences, skills, and other 
-           interesting events in my life. My goal is to stay consistent with developing and 
-           creating, and this website will display all of that. 
-   
-       </p>
-   
-       <p>The projects section will mainly showcase some key software/coding projects 
-            I have worked on or currently working on. I also have an extended projects 
-            section with other smaller projects and some school assignments that I have 
-            enjoyed working on. 
-       </p>
-   
-       <p>
-           I have experience with languages such as C, Java, Javascript, HTML/CSS and 
-           Python. I am familiar with tools such as Github, Gitlab, Trello, WordPress, 
-           Linux environment, and Adobe Suite. I am also familiar with agile methodologies 
-           and collaborating in  team environments, this is mainly because of the Software Design 
-           classes I have taken.
-       </p>
-
-
-    </div>
-    
-
-    <div class="me">
-
-        <img src="beachMe.jpeg">
-
-
-    </div>
-
-
-</div>
-
-
-<section id="section12">
-    <h1>my projects</h1>
-</section>
-
-
-<div class="thumbnail-rows">
-
-    <div class="thumbnail-container1">
-        <img src="cmlsNew.png" alt="Thumbnail1" style="width:100%" >
-        <p class="description1">cMLS <br> </p>
-
-        <p class="description10">cMLS <br> </p>
-
-        <p>This website will be used to explore all three of the Canadian teams in Major League Soccer (MLS).
-            Users can also search for players in the MLS.
-        </p>
-
-        
-    </div>
-
-   
-
-    
-    <div class="thumbnail-container2">
-        <img src="app.png" alt="Thumbnail2" style="width:100%" onclick="openModal2()">
-        <p class="description2">Food Ordering App <br></p>
-
-        <p class="description20">Food Ordering App <br></p>
-
-        <p>Developed and launched a custom jewelry website for a client, enabling them to showcase and sell handmade jewelry online</p>
-
-
-    </div>
-
-    
-
-
-    <div class="thumbnail-container3">
-        <img src="alk1.png" alt="Thumbnail3" style="width:100%" onclick="openModal3()">
-        <p class="description3">Alka Jewellery<br></p>
-
-        <p class="description30">Alka Jewellery<br></p>
-
-
-        <p>Developed and launched a custom jewelry website for a client, enabling them to showcase and sell handmade jewelry online</p>
-
-    </div>
-
-
-
-
-
-</div>
-
-
-
-
-<section id="section2">
-    
-    
-
-
-</section>
-
-
-<section id="section3">
-    <h1>smaller projects</h1>
-</section>
-
-
-<div class="projects-row">
-
-    <div class="drone">
-        <img src="drone3.png" alt="Thumbnail1" style="width:100%" >
-        <p class="d1">Drones<br> </p>
-
-        <p></p>
-    </div>
-
-    <p class="description10">Drones<br> </p>
-
-    
-    <div class="ePortfolio">
-        <img src="a3java.png" alt="Thumbnail2" style="width:100%" onclick="openModal2()">
-        <p class="d2">ePortfolio <br></p>
-    </div>
-
-    <p class="description20">ePortfolio <br></p>
-
-
-    <div class="project">
-        <img src="Cproject.png" alt="Thumbnail3" style="width:100%" onclick="openModal3()">
-        <p class="d3">Car Store<br></p>
-        <p></p>
-    </div>
-
-
-    <p class="description30">Car Store<br></p>
-
-
-</div>
-
-
-
-
-
+}
+  
+/* ROW HEADER */
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 12px;
   
 
-<section id="section5">
-    <h1>Languages/Tools/Frameworks</h1>
-</section>
+}
+
+/* DECORATION, COLOUR OF TEXT */
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+  overflow-x: hidden;
+}
 
 
-<div class="icons">
+nav ul li a::after{
+  content: ' ';
+  width: 0;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
 
-    <div class="c">
-        <img src="C.png" alt="Thumbnail1" style="width:100%" >
-    </div>
-
-    
-    <div class="c">
-        <img src="java.png" alt="Thumbnail2" style="width:100%" >
-    </div>
-
-
-
-    <div class="c">
-        <img src="js.png" alt="Thumbnail3" style="width:100%" >
-    </div>
+nav ul li a:hover::after{
+  width: 100%;
+}
 
 
-    <div class="c">
-        <img src="html.png" alt="Thumbnail3" style="width:100%" >
-    </div>
+#section1{
 
-    <div class="c">
-        <img src="css.png" alt="Thumbnail3" style="width:100%" >
-    </div>
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  overflow-x: hidden;
 
-</div>
+}
 
+#section1 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
+  font-size: 25px;
+  margin-top: -150px;
+  align-items: center;
+  overflow-x: hidden;
+}
 
-<div class="icons2">
+.me1 h1{
 
-    <div class="tools">
-        <img src="github-logo.png" alt="Thumbnail1" style="width:100%" >
-    </div>
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-    <div class="tools">
-        <img src="gitlab-logo-600.png" alt="Thumbnail1" style="width:100%" >
-    </div>
+  font-size: 20px;
 
-    <div class="tools">
-        <img src="pr.png" alt="Thumbnail1" style="width:100%" >
-    </div>
+  overflow-x: hidden;
 
-    <div class="tools">
-        <img src="adobe-indesign.png" alt="Thumbnail1" style="width:100%" >
-    </div>
+}
 
-    
-</div>
+.me1 p{
 
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
+  font-size: 15px;
 
+  overflow-x: hidden;
 
-<section id="section6">
-    <h1>extras</h1>
-</section>
+}
 
+.profile-pic2 {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; 
+  align-items: center;
 
-
-
-<div class="extraSection">
-
-    <div class="text">
-
-
-        <p>I also have experience editing and creating videos, whether that's my own video or someone else's video. 
-
-        </p>
-
-    </div>
-
-    <div class="image">
-
-        <img src="content.png">
+  margin-bottom: -190px;
+  border: 3px solid #bbeeff;
 
 
+  transition: transform 0.4s ease, box - shawdow 0.4s ease;
 
-    </div>
-
-</div>
-
+  overflow-x: hidden;
 
 
-<section id= "Third"> 
+}
 
-    <footer class="footer">
+.profile-pic2:hover{
 
-  
+  transform: translateY(-10px); /* Move the image up by 10px */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
 
-        <div class="logo-container">
-    
-            <a href="#top">
-                <img src="HT LOGO.png" alt="Your Logo" class="footer-logo">
-            </a>
-            
-        </div>
-      
-    
-        <div class="footer-contact">
+  overflow-x: hidden;
 
-            <a href="https://www.linkedin.com/in/hthilaka/">
-
-                <img src="linkedin.png" alt="click" style="width: 40px; height: auto">
-
-            </a>
+}
 
 
-            <a href="https://github.com/HariT10">
+.profile-pic{
 
-                <img src="github-logo.png" alt="click" style="width: 40px; height: auto" >
+  display: none;
 
-            </a>
-
-            <a href="harishan.thilak@gmail.com">
-
-                <img src="email.png" alt="click" style="width: 40px; height: auto" >
-
-            </a>
+}
 
 
 
-        </div>
-        <p>© 2025 Harishan Thilakanathan. All rights reserved. </p>
-    </footer>
-    
-    </Section>
-    
+
+#section0{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+  overflow-x: hidden;
+
+}
+
+#section0 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 30px;
+  margin-top: 50px;
+
+  overflow-x: hidden;
+}
+
+.aboutMe{
+
+  flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers content */
+    margin-top: -100px; /* Adjust spacing if needed */
+   padding-bottom: 1000px;
+
+   
+
+
+}
 
 
 
+
+.text{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  text-align: justify;
 
  
 
-</body>
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 13px;
 
-</html>
+
+
+  padding: 40px;
+
+
+
+  margin-top: 20px;
+
+}
+
+
+.text p{
+
+  text-align: justify;
+  margin-bottom: -720px;
+  
+
+
+}
+
+
+.me {
+  display: flex; /* Enables Flexbox for alignment */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin-top: 100px;
+
+}
+
+.me img {
+  width: 190px;
+  height: auto;
+  border: 5px solid #bbeeff;
+  padding: 0; /* Remove excessive padding */
+  margin: 0; /* Reset margin */
+
+  margin-top: 350px;
+  
+}
+
+
+#section12{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+#section12 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  font-size: 30px;
+  margin-top: -2100px;
+
+}
+
+
+
+.thumbnail-rows{
+
+  display: block;
+
+  margin-top: -1200px;
+
+
+}
+
+.thumbnail-container1{
+
+  width: 60%;
+  padding: 0;
+
+  flex-direction: column;
+  
+  
+  margin: 0 auto;
+
+
+  margin-bottom: 150px;
+
+  
+}
+
+.thumbnail-container1 img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+
+
+  width: 100%
+
+  
+}
+
+.thumbnail-container1 p{
+  
+}
+
+.description1{
+  display: none;
+
+}
+
+
+/* Description text */
+.description10 {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+ 
+  color: #555;
+  text-align: center;
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 20px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+
+
+}
+
+.thumbnail-container1 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+
+.thumbnail-container2{
+
+
+  width: 60%;
+  padding: 0;
+
+  flex-direction: column;
+  
+  
+  margin: 0 auto;
+
+
+  margin-bottom: 150px;
+
+  
+
+}
+
+.thumbnail-container2 img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+
+  margin-top: 100px;
+  
+}
+
+.thumbnail-container2 p{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+
+.description2 {
+  display: none;
+  
+}
+
+
+
+.description20{
+
+  
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+
+}
+
+.thumbnail-container3{
+
+
+  width: 60%;
+  padding: 0;
+
+  flex-direction: column;
+  
+  
+  margin: 0 auto;
+
+
+  margin-bottom: 150px;
+
+  
+
+
+}
+
+.thumbnail-container3 img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+
+
+  margin-top: 100px;
+
+  
+}
+
+.thumbnail-container3 p {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  text-align: center;
+
+  margin-top: 10px;
+}
+
+
+.description3 {
+  display: none;
+
+  
+}
+
+.description30{
+
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+  
+
+}
+
+
+
+#section2 h1{
+  font-size: 25px;
+  margin-top: 60px;
+  margin-left: 100px;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  
+}
+
+#section2 p{
+  max-width: 700px;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 100px;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  
+
+}
+
+
+
+#section3{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+  
+}
+
+#section3 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 30px;
+  margin-top: 300px;
+  
+}
+
+
+
+
+.projects-row{
+
+  display: block;
+
+  margin-top: -30px;
+
+  
+
+}
+
+
+
+
+
+
+.drone{
+
+  width: 60%;
+  padding: 0;
+
+  flex-direction: column;
+  
+  
+  margin: 0 auto;
+
+
+  margin-bottom: 150px;
+  
+  
+}
+
+.drone img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+
+
+  width: 100%
+  
+  
+}
+
+.d1{
+  display: none;
+  overflow-x: hidden;
+}
+
+
+/* Description text */
+.description10 {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: -110px;
+  color: #555;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+
+.ePortfolio{
+
+
+  width: 60%;
+  padding: 0;
+
+  flex-direction: column;
+  
+  
+  margin: 0 auto;
+
+
+  margin-bottom: 150px;
+
+  
+
+}
+
+.ePortfolio img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+
+  margin-top: 100px;
+}
+
+
+.d2 {
+  display: none;
+}
+
+
+
+.description20{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: -110px;
+
+  color: #555;
+  text-align: center;
+
+}
+
+
+.project{
+
+
+  width: 60%;
+  padding: 0;
+
+  flex-direction: column;
+  
+  
+  margin: 0 auto;
+
+
+  margin-bottom: 150px;
+
+
+}
+
+.project img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+
+
+  margin-top: 100px;
+  
+}
+
+
+.d3 {
+  display: none;
+}
+
+.description30{
+
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: -110px;
+
+  color: #555;
+  text-align: center;
+
+
+}
+
+
+#section5{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+#section5 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 21px;
+  margin-top: 300px;
+}
+
+
+.icons{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  
+
+
+}
+
+
+
+.c{
+
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%; /* Makes the icon circular */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 24px;
+
+}
+
+.c:hover{
+
+  transform: scale(1.1); /* Slightly enlarge the icon */
+  background-color: grey;
+
+
+}
+
+
+
+.icons2{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  
+  gap: 20px
+
+}
+
+.tools{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 40%; /* Makes the icon circular */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.tools:hover{
+
+  transform: scale(2.2); /* Slightly enlarge the icon */
+  background-color: grey;
+
+
+}
+
+
+
+#section6{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+#section6 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+#extraSection{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+
+
+
+
+
+
+
+
+.text p{
+
+  display: flex; /* Enables Flexbox for alignment */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Sets the height to fill the viewport */
+  text-align: center; /* Ensures the text is centered within the box */
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 14px;
+  margin-top: -490px;
+
+  align-items: center;
+
+  padding: 30px;
+
+}
+
+.image {
+  display: flex; /* Enables Flexbox for alignment */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin-top: 100px;
+}
+
+.image img {
+  width: 290px;
+  height: auto;
+  border: 5px solid #bbeeff;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+} /*END OF PHONE-----------------------------------------*/
+
+
+
+
+@media screen and (min-width: 921px){
+
+
+  body{
+    background-color: white;
+    /*background-image: url(4907157.jpg);*/
+    background-size: 100% auto;
+    background-attachment: fixed;
+    overflow: auto;
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+
+  }
+
+  /* PICUTRE */
+  .image1{
+    width: 300px;
+    height: 200px;
+  }
+
+
+
+/* HEADER */
+
+nav{
+ 
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*margin-left: 50px;*/
+  /*margin-top: 10px;*/
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  /*font-family: 'Courier New', Courier, monospace;*/
+
+  background-color: #bbeeff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+}
+  
+/* ROW HEADER */
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
+
+}
+
+/* DECORATION, COLOUR OF TEXT */
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  
+}
+
+
+nav ul li a::after{
+  content: ' ';
+  width: 0;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+
+
+
+#section1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+
+
+}
+
+#section1 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  font-size: 50px;
+}
+
+.me1 h1{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  font-size: 20px;
+
+}
+
+.me1 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  font-size: 20px;
+
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  
+  margin-left: 70px;
+  margin-bottom: -10px;
+  border: 3px solid #bbeeff;
+
+
+  transition: transform 0.4s ease, box - shawdow 0.4s ease;
+
+}
+
+.profile-pic:hover{
+
+  transform: translateY(-10px); /* Move the image up by 10px */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+
+
+}
+
+.profile-pic2{
+  display: none;
+}
+
+
+
+
+
+
+#section0{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+#section0 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+
+
+
+.aboutMe{
+
+  display:flex;
+  justify-content: space-between;
+  /*this makes it so i can postion the image anywhere*/
+  align-items: flex-start;
+
+
+
+  gap: 170px;
+
+  padding: 150px;
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  margin-top: -100px;
+
+  margin-left: -50px;
+
+
+}
+
+.text{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 18px;
+
+  text-align: justify;
+
+}
+
+
+.text p{
+
+  margin-bottom: 150px;
+}
+
+
+.me img{
+  width: 310px;
+  height: auto;
+  
+
+  margin-top: -90px;
+  
+  
+  border-radius:10px;
+  border: 5px solid #bbeeff;
+
+}
+
+
+
+
+
+
+
+
+#section12{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+#section12 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  font-size: 40px;
+  margin-top: -800px;
+}
+
+
+
+
+.thumbnail-rows {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: flex-start; 
+  gap: 10px; 
+  cursor: pointer; 
+  margin-top: -500px;
+}
+
+.thumbnail-container1{
+
+  width: 20%;
+  padding: 90px;
+}
+
+.thumbnail-container1 img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+}
+
+.thumbnail-container1 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+
+
+}
+
+
+
+.thumbnail-container2{
+
+
+  width: 20%;
+  padding: 90px;
+
+}
+
+.thumbnail-container2 img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+}
+
+.thumbnail-container2 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+
+
+}
+
+
+.thumbnail-container3{
+
+
+  width: 20%;
+  padding: 90px;
+
+}
+
+.thumbnail-container3 img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+}
+
+.thumbnail-container3 p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  text-align: center;
+
+
+}
+
+
+/* Description text */
+.description1 {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
+
+.description10{
+  display: none;
+}
+
+.description2 {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
+
+.description20{
+
+  display: none;
+
+}
+
+
+.description3 {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
+
+
+.description30{
+
+  display: none;
+}
+
+
+
+
+#section2 h1{
+  font-size: 25px;
+  margin-top: 60px;
+  margin-left: 100px;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+}
+
+#section2 p{
+  max-width: 700px;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 100px;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+
+}
+
+
+
+
+#section3{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+#section3 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 40px;
+  margin-top: 300px;
+}
+
+
+
+.projects-row{
+
+  display: flex; 
+  justify-content: space-around; 
+  align-items: flex-start; 
+  gap: -10px; 
+  cursor: pointer; 
+  margin-top: 10px;
+
+}
+
+.drone{
+
+  width: 20%;
+  padding: 90px;
+
+  
+}
+
+.drone img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+  
+}
+
+.d1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
+
+
+.ePortfolio{
+
+
+  width: 20%;
+  padding: 90px;
+
+}
+
+.ePortfolio img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+}
+
+.d2{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
+
+
+
+.project{
+
+
+  width: 20%;
+  padding: 90px;
+
+}
+
+.project img{
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+}
+
+
+.d3{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
+
+
+
+
+
+
+
+#section5{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+#section5 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 40px;
+  margin-top: 300px;
+}
+
+.icons{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  
+  gap: 50px
+
+}
+
+.c{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 40%; /* Makes the icon circular */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 24px;
+
+}
+
+.c:hover{
+
+  transform: scale(2.2); /* Slightly enlarge the icon */
+  background-color: grey;
+
+}
+
+
+
+.icons2{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  
+  gap: 50px
+
+}
+
+.tools{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 40%; /* Makes the icon circular */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 24px;
+
+}
+
+.tools:hover{
+
+  transform: scale(2.2); /* Slightly enlarge the icon */
+  background-color: grey;
+
+
+}
+
+
+
+
+#section6{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+
+
+}
+
+#section6 h1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  font-size: 40px;
+  margin-top: 300px;
+}
+
+
+
+
+#section4{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  margin-top: 650px;
+
+}
+
+
+
+
+
+
+.extraSection{
+  display: flex;
+  align-items: flex-start; 
+
+  justify-content: space-between;
+
+
+  gap: 100px;
+
+
+  padding: 120px;
+
+}
+
+
+
+.text p{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+ 
+  margin-left: 100px;
+  font-size: 19px;
+  margin-top: -100px;
+
+}
+
+.image img{
+  width: 450px;
+  height: 450px;
+  margin-left: 100px;
+  margin-top: -130px;
+
+  margin-right: 0px;
+
+  border: 5px solid black; /* Change 'black' to your desired color */
+  border-radius: 10px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/*FOOTER----------*/
+
+
+
+.footer {
+
+  margin-top: 100px;
+  height: auto; 
+  padding: 20px 16px; 
+  /*background: #FFFAF0; */
+  background: #bbeeff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  border-top: 2px solid #e0e0e0; 
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.footer p{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+
+}
+
+
+
+
+
+
+.footer-contact a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Footer Logo */
+.footer-logo {
+  width: 170px; /* Adjust based on your logo size */
+  margin-bottom: 10px; /* Space below logo */
+}
+
