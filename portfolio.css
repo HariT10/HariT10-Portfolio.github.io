@@ -1343,7 +1343,8 @@ nav ul li a:hover::after{
 .c:hover{
 
   transform: scale(2.2); /* Slightly enlarge the icon */
-  background-color: grey;
+  transform: scale(2.2); /* Slightly enlarge the icon */
+  box-shadow: 0 0 100px 10px rgba(139, 220, 255, 0.5); 
 
 }
 
@@ -1376,7 +1377,8 @@ nav ul li a:hover::after{
 .tools:hover{
 
   transform: scale(2.2); /* Slightly enlarge the icon */
-  background-color: grey;
+  box-shadow: 0 0 100px 10px rgba(139, 220, 255, 0.5); 
+
 
 
 }
@@ -1496,11 +1498,11 @@ nav ul li a:hover::after{
 }
 
 
-
-
 a{
   text-decoration: none;
 }
+
+
 
 
 .footer-contact a:hover {
@@ -1512,6 +1514,7 @@ a{
   width: 170px; /* Adjust based on your logo size */
   margin-bottom: 10px; /* Space below logo */
 }
+
 
   
 
