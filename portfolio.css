@@ -36,7 +36,7 @@
   width: 100%; /* Full width of the viewport */
   padding: 8px 12px;
   background-color: white;
-  color: #f1f1f1;
+  color: #bbeeff;
   margin: 0; /* Removes any default margin */
   text-align: center;
   position: relative; /* Ensures dropdown menu stays within header width */
@@ -63,12 +63,12 @@
 .nav-menu {
   display: none; /* Menu is hidden by default */
   flex-direction: column;
-  background-color: #f9f9f9;
+  background-color: #bbeeff;
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 1;
   z-index: 999;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -262,56 +262,59 @@ nav ul li a:hover::after{
 #section0 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 30px;
-  margin-top: 50px;
+  margin-top: 280px;
 
   overflow-x: hidden;
 }
 
-.aboutMe{
 
-  flex-direction: column; /* Stacks elements vertically */
-    align-items: center; /* Centers content */
-    margin-top: -100px; /* Adjust spacing if needed */
-   padding-bottom: 1000px;
+.aboutMe {
+  padding: 20px; /* Reduce padding for smaller screens */
+  margin: 0 8px; /* Prevent text from touching edges */
 
-   
-
-
-}
-
-
-
-
-.text{
-
-  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
   text-align: justify;
 
- 
+  margin-top: 10px;
 
-  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  font-size: 13px;
-
-
-
-  padding: 40px;
-
-
-
-  margin-top: 20px;
 
 }
 
-
-.text p{
-
+.text1{
+  display: block;
+  font-size: 14px; /* Slightly smaller text on mobile */
   text-align: justify;
-  margin-bottom: -720px;
-  
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  padding: 25px;
+}
 
+.text1 p{
+
+  margin-bottom: 10px; /* Slightly reduce space between paragraphs */
+
+  text-align: justify !important;
 
 }
+
+
+
+.text {
+  display: none;
+  font-size: 14px; /* Slightly smaller text on mobile */
+  text-align: justify;
+
+}
+
+.text p {
+  display: none;
+  margin-bottom: 10px; /* Slightly reduce space between paragraphs */
+
+  text-align: justify !important;
+
+}
+
+
+
 
 
 .me {
@@ -323,6 +326,7 @@ nav ul li a:hover::after{
 }
 
 .me img {
+  display: none;
   width: 190px;
   height: auto;
   border: 5px solid #bbeeff;
@@ -348,7 +352,7 @@ nav ul li a:hover::after{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
   font-size: 30px;
-  margin-top: -2100px;
+  margin-top: -100px;
 
 }
 
@@ -358,7 +362,7 @@ nav ul li a:hover::after{
 
   display: block;
 
-  margin-top: -1200px;
+  margin-top: -100px;
 
 
 }
@@ -572,7 +576,7 @@ nav ul li a:hover::after{
 #section3 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 30px;
-  margin-top: 300px;
+  margin-top: 100px;
   
 }
 
@@ -1098,6 +1102,11 @@ nav ul li a:hover::after{
 .text p{
 
   margin-bottom: 150px;
+}
+
+
+.text1{
+  display: none;
 }
 
 
