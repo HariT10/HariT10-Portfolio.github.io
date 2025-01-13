@@ -282,10 +282,10 @@ nav ul li a:hover::after{
 
 .text1{
   display: block;
-  font-size: 14px; /* Slightly smaller text on mobile */
+  font-size: 16px; /* Slightly smaller text on mobile */
   text-align: justify;
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  padding: 25px;
+  padding: 35px;
 }
 
 .text1 p{
@@ -385,7 +385,7 @@ nav ul li a:hover::after{
 
 .thumbnail-container1 img{
   border: 5px solid black; /* Change 'black' to your desired color */
-  border-radius: 10px; 
+  border-radius: 15px; 
 
 
   width: 100%
@@ -448,7 +448,7 @@ nav ul li a:hover::after{
 
 .thumbnail-container2 img{
   border: 5px solid black; /* Change 'black' to your desired color */
-  border-radius: 10px; 
+  border-radius: 15px; 
 
   margin-top: 100px;
   
@@ -502,7 +502,7 @@ nav ul li a:hover::after{
 
 .thumbnail-container3 img{
   border: 5px solid black; /* Change 'black' to your desired color */
-  border-radius: 10px; 
+  border-radius: 15px; 
 
 
   margin-top: 100px;
@@ -616,7 +616,7 @@ nav ul li a:hover::after{
 
 .drone img{
   border: 5px solid black; /* Change 'black' to your desired color */
-  border-radius: 10px; 
+  border-radius: 15px; 
 
 
   width: 100%
@@ -660,7 +660,7 @@ nav ul li a:hover::after{
 
 .ePortfolio img{
   border: 5px solid black; /* Change 'black' to your desired color */
-  border-radius: 10px; 
+  border-radius: 15px; 
 
   margin-top: 100px;
 }
@@ -702,7 +702,7 @@ nav ul li a:hover::after{
 
 .project img{
   border: 5px solid black; /* Change 'black' to your desired color */
-  border-radius: 10px; 
+  border-radius: 15px; 
 
 
   margin-top: 100px;
@@ -849,13 +849,6 @@ nav ul li a:hover::after{
 }
 
 
-
-
-
-
-
-
-
 .text p{
 
   display: flex; /* Enables Flexbox for alignment */
@@ -885,6 +878,7 @@ nav ul li a:hover::after{
   width: 290px;
   height: auto;
   border: 5px solid #bbeeff;
+  border-radius: 15px;
   
 }
 
@@ -1608,6 +1602,9 @@ a{
   width: 170px; /* Adjust based on your logo size */
   margin-bottom: 10px; /* Space below logo */
 }
+
+
+  
 
 
   
