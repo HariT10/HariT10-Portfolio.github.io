@@ -63,7 +63,7 @@
 .nav-menu {
   display: none; /* Menu is hidden by default */
   flex-direction: column;
-  background-color: #bbeeff;
+  background-color: white;
   position: absolute;
   top: 60px;
   left: 0;
