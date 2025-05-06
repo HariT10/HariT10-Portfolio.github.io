@@ -3,7 +3,7 @@
 
 
   body{
-    background-color: white;
+    background-color:  #FFF8DC;
     /*background-image: url(4907157.jpg);*/
     background-size: 100% auto;
     background-attachment: fixed;
@@ -20,6 +20,8 @@
 
   }
 
+
+
   /* PICUTRE */
   .image1{
     width: 300px;
@@ -27,21 +29,49 @@
     overflow-x: hidden;
   }
 
+  .startText h4{
+
+    text-align: center;
+  
+    margin-top: 60px;
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+    margin-left: 90px;
+  
+    margin-right: 90px;
+  
+    font-weight: normal;
+  
+  
+  }
+
+
+  
+  .footer-contact2{
+  
+    text-align: center;
+    margin-top: 30px;
+  }
+
+#typewriter{
+  font-size: 25px;
+
+}
+
+
+.footer-contactStart{
+
+  display: none;
+
+
+}
+  
+
 
 
 /* HEADER */
 
-
-.header {
-  width: 100%; /* Full width of the viewport */
-  padding: 8px 12px;
-  background-color: white;
-  color: #bbeeff;
-  margin: 0; /* Removes any default margin */
-  text-align: center;
-  position: relative; /* Ensures dropdown menu stays within header width */
-  box-sizing: border-box; /* Prevents padding from affecting width */
-}
 
 
 
@@ -63,8 +93,8 @@
 .nav-menu {
   display: none; /* Menu is hidden by default */
   flex-direction: column;
-  background-color: white;
-  position: absolute;
+  background-color: #52AD9C;
+  position: relative;
   top: 60px;
   left: 0;
   width: 100%;
@@ -78,8 +108,6 @@
 }
 
 
-
-  
 /* ROW HEADER */
 nav ul{
   display: none;
@@ -91,17 +119,21 @@ nav ul{
   list-style-type: none;
   margin-top: -12px;
 
+
+
 }
 
 nav ul li{
   margin: 10px 0;
   text-decoration: none;
+
+  margin-left: 20px;
 }
 
 nav ul li a{
 
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   
 }
 
@@ -110,7 +142,7 @@ nav ul li a::after{
   content: ' ';
   width: 0;
   height: 3px;
-  background: #000000;
+  background: #ffffff;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -186,13 +218,13 @@ nav ul li a:hover::after{
 #section1 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-  font-size: 25px;
-  margin-top: -150px;
+  font-size: 38px;
+  margin-top: -10px;
   align-items: center;
   overflow-x: hidden;
 }
 
-.me1 h1{
+.me1{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
@@ -200,6 +232,10 @@ nav ul li a:hover::after{
 
   overflow-x: hidden;
 
+}
+
+.highlight{
+  font-size: 19px;
 }
 
 .me1 p{
@@ -246,6 +282,30 @@ nav ul li a:hover::after{
 }
 
 
+.profile-pic5{
+
+  display: block;
+
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; 
+
+
+  margin: 0 auto;
+
+  margin-top: -70px;
+
+
+
+
+  border: 3px solid #52AD9C;
+
+  
+}
+
+
+
+
 
 
 #section0{
@@ -262,7 +322,7 @@ nav ul li a:hover::after{
 #section0 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 30px;
-  margin-top: 280px;
+  margin-top: 100px;
 
   overflow-x: hidden;
 }
@@ -275,22 +335,23 @@ nav ul li a:hover::after{
 
   text-align: justify;
 
-  margin-top: 10px;
+  margin-top: -60px;
 
 
 }
 
 .text1{
   display: block;
-  font-size: 16px; /* Slightly smaller text on mobile */
+  font-size: 15px; 
   text-align: justify;
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   padding: 35px;
+  margin-top: -120px;
 }
 
 .text1 p{
 
-  margin-bottom: 10px; /* Slightly reduce space between paragraphs */
+  margin-bottom: 1px; /* Slightly reduce space between paragraphs */
 
   text-align: justify !important;
 
@@ -352,7 +413,7 @@ nav ul li a:hover::after{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
   font-size: 30px;
-  margin-top: -100px;
+  margin-top: -280px;
 
 }
 
@@ -362,31 +423,68 @@ nav ul li a:hover::after{
 
   display: block;
 
-  margin-top: -100px;
+  margin-top: -280px;
 
 
 }
 
+
+.project-card {
+ 
+  border-radius: 20px; /* softer curve */
+  border: 2px solid #000000; /* light gray border */
+  padding: 10px;
+  width: 270px;
+  height: 500px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  margin: 0 auto; /* Center the card */
+
+
+  margin-bottom: 80px; 
+
+
+  
+}
+
+.projectImage{
+
+
+  width: 190%;
+  height: 230px; /* or 220px or 250px if you want even bigger */
+  object-fit: cover; /* keeps the image nicely inside its box without stretching */
+  border-radius: 12px; /* optional, makes corners round */
+
+
+
+  
+
+}
+
+
+.project-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
 .thumbnail-container1{
 
-  width: 60%;
-  padding: 0;
-
-  flex-direction: column;
-  
+  width: 80%;
+ 
   
   margin: 0 auto;
 
-
-  margin-bottom: 150px;
 
   
 }
 
 .thumbnail-container1 img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 
+  margin: 0 auto;
 
   width: 100%
 
@@ -431,26 +529,24 @@ nav ul li a:hover::after{
 .thumbnail-container2{
 
 
-  width: 60%;
-  padding: 0;
-
-  flex-direction: column;
-  
+  width: 80%;
+ 
   
   margin: 0 auto;
 
 
-  margin-bottom: 150px;
 
   
 
 }
 
 .thumbnail-container2 img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 
-  margin-top: 100px;
+  margin: 0 auto;
+
+  width: 100%
   
 }
 
@@ -484,16 +580,10 @@ nav ul li a:hover::after{
 .thumbnail-container3{
 
 
-  width: 60%;
-  padding: 0;
-
-  flex-direction: column;
-  
+  width: 80%;
+ 
   
   margin: 0 auto;
-
-
-  margin-bottom: 150px;
 
   
 
@@ -501,11 +591,12 @@ nav ul li a:hover::after{
 }
 
 .thumbnail-container3 img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 
+  margin: 0 auto;
 
-  margin-top: 100px;
+  width: 100%
 
   
 }
@@ -517,6 +608,116 @@ nav ul li a:hover::after{
 
   margin-top: 10px;
 }
+
+
+
+
+
+.tech-tags{
+  display: flex;
+
+  justify-content: center;
+  gap: 5px;
+
+  width: 100%;
+}
+
+
+.tech-tags span {
+
+  background-color: #555;
+  color: #ffffff;
+  padding: 4px 12px;
+  margin: 5px 5px 0 4;
+  font-size: 13px;
+  border-radius: 20px;
+  line-height: 1;
+
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  white-space: nowrap; 
+
+}
+
+
+
+
+
+
+
+.tech-tags2{
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+  gap: 5px;
+
+  width: 100%;
+}
+
+
+.tech-tags2 span {
+
+  background-color: #555;
+  color: #ffffff;
+  padding: 4px 12px;
+  margin: 5px 5px 0 0;
+  font-size: 13px;
+  border-radius: 20px;
+
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  white-space: nowrap; 
+}
+
+
+
+.button-cont{
+
+
+  /*make the buttons side by side */
+  display: flex;
+
+
+  justify-content: center;
+
+  gap: 15px;
+
+
+
+}
+
+
+.button{
+
+  display: inline-block;
+
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+}
+
+
+.button:hover{
+  background-color: grey;
+}
+
+
 
 
 .description3 {
@@ -576,18 +777,18 @@ nav ul li a:hover::after{
 #section3 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 30px;
-  margin-top: 100px;
+  margin-top: -280px;
   
 }
 
 
 
 
-.projects-row{
+.projects-row1{
 
   display: block;
 
-  margin-top: -30px;
+  margin-top: -280px;
 
   
 
@@ -615,18 +816,56 @@ nav ul li a:hover::after{
 
 
 
+.project-card1 {
+ 
+  border-radius: 20px; /* softer curve */
+  border: 2px solid #000000; /* light gray border */
+  padding: 10px;
+  width: 270px;
+  height: 520px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  margin: 0 auto; /* Center the card */
+
+
+  margin-bottom: 80px; 
+
+
+  
+}
+
+.projectImage1{
+
+
+  width: 190%;
+  height: 230px; /* or 220px or 250px if you want even bigger */
+  object-fit: cover; /* keeps the image nicely inside its box without stretching */
+  border-radius: 12px; /* optional, makes corners round */
+
+
+
+  
+
+}
+
+
+.project-card1:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
 .drone{
 
-  width: 60%;
-  padding: 0;
-
-  flex-direction: column;
-  
+  width: 80%;
+ 
   
   margin: 0 auto;
-
-
-  margin-bottom: 150px;
   
   
 }
@@ -644,9 +883,10 @@ nav ul li a:hover::after{
 }
 
 .drone img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 
+  margin: 0 auto;
 
   width: 100%
   
@@ -672,16 +912,10 @@ nav ul li a:hover::after{
 .ePortfolio{
 
 
-  width: 60%;
-  padding: 0;
-
-  flex-direction: column;
-  
+  width: 80%;
+ 
   
   margin: 0 auto;
-
-
-  margin-bottom: 150px;
 
 }
 
@@ -698,10 +932,12 @@ nav ul li a:hover::after{
 }
 
 .ePortfolio img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 
-  margin-top: 100px;
+  margin: 0 auto;
+
+  width: 100%
 }
 
 
@@ -725,26 +961,21 @@ nav ul li a:hover::after{
 .project{
 
 
-  width: 60%;
-  padding: 0;
-
-  flex-direction: column;
-  
+  width: 80%;
+ 
   
   margin: 0 auto;
-
-
-  margin-bottom: 150px;
 
 
 }
 
 .project img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 
+  margin: 0 auto;
 
-  margin-top: 100px;
+  width: 100%
   
 }
 
@@ -856,7 +1087,9 @@ nav ul li a:hover::after{
 
 #section6{
 
-  display: flex;
+  display: none;
+
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   height: 55vh;
@@ -879,7 +1112,9 @@ nav ul li a:hover::after{
 
 .extraSection p{
 
-  display: flex;
+  display: none;
+
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
 
@@ -901,7 +1136,8 @@ nav ul li a:hover::after{
 
 
 .image {
-  display: flex; /* Enables Flexbox for alignment */
+  display: none;;
+  /*display: flex; *//* Enables Flexbox for alignment */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
   margin-top: -350px;
@@ -935,7 +1171,8 @@ nav ul li a:hover::after{
 
 
   body{
-    background-color: white;
+    /*background-color: white;*/
+    background-color: #FFF8DC;
     /*background-image: url(4907157.jpg);*/
     background-size: 100% auto;
     background-attachment: fixed;
@@ -953,14 +1190,87 @@ nav ul li a:hover::after{
     height: 200px;
   }
 
+.project-cardStart{
+
+  margin: 0 auto;
+
+  border-radius: 20px; /* softer curve */
+  border: 2px solid #000000; /* light gray border */
+  /*#e0e0e0; light gray border */
+  padding: 10px;
+  width: 600px;
+  height: 150px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+  .startText h4{
+
+
+
+    margin: 0 auto;
+
+
+
+    position: relative;
+
+    max-width: 500px;      
+
+    font-size: 19px;
+
+    text-align: center;
+
+    
+  
+    margin-top: 30px;
+  
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  
+  
+    font-weight: normal;
+  
+  
+  }
+
+
+  .footer-contactStart{
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    
+
+    margin-top: 70px;
+  
+
+
+
+  }
+  
+
 
 
 /* HEADER */
 
-nav{
+#top-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #e0f0ff; /* Slightly softer blue */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar{
  
   display: flex;
-  align-items: right;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   /*margin-left: 50px;*/
@@ -968,11 +1278,25 @@ nav{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
   /*font-family: 'Courier New', Courier, monospace;*/
 
-  background-color: #bbeeff;
+  background-color: #52AD9C;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+  padding: 10px 5%;
+
 }
+
+
+
   
 /* ROW HEADER */
+
+
+.logo img{
+
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+
+}
 
 nav ul li{
   display: inline-block;
@@ -985,9 +1309,9 @@ nav ul li{
 /* DECORATION, COLOUR OF TEXT */
 
 nav ul li a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 21px;
   position: relative;
   
 }
@@ -1022,17 +1346,27 @@ nav ul li a:hover::after{
 
 }
 
-#section1 h1{
-  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-
-  font-size: 50px;
+.me1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  width: 90%;
+  flex-wrap: wrap; /* So it stacks on smaller screens */
 }
+
+.highlight{
+  font-size: 30px;
+}
+
+
 
 .me1 h1{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-  font-size: 20px;
+  font-size: 50px;
 
 }
 
@@ -1040,18 +1374,27 @@ nav ul li a:hover::after{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
-  font-size: 20px;
+  font-size: 18px;
+
+ 
+
+}
+
+.profile-pic5{
+
+  display: none;
+
 
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%; 
   
   margin-left: 70px;
   margin-bottom: -10px;
-  border: 3px solid #bbeeff;
+  border: 5px solid #52AD9C;
 
 
   transition: transform 0.4s ease, box - shawdow 0.4s ease;
@@ -1060,9 +1403,8 @@ nav ul li a:hover::after{
 
 .profile-pic:hover{
 
-  transform: translateY(-10px); /* Move the image up by 10px */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -1088,7 +1430,7 @@ nav ul li a:hover::after{
 #section0 h1{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: -140px;
 }
 
 
@@ -1123,6 +1465,8 @@ nav ul li a:hover::after{
 
   text-align: justify;
 
+  margin-top: -140px;
+
 }
 
 
@@ -1142,11 +1486,11 @@ nav ul li a:hover::after{
   height: auto;
   
 
-  margin-top: -90px;
+  margin-top: -220px;
   
   
-  border-radius:15px;
-  border: 5px solid #bbeeff;
+  border-radius:20px;
+  border: 5px solid #52AD9C;
 
 }
 
@@ -1177,6 +1521,8 @@ nav ul li a:hover::after{
 
 
 
+
+
 .thumbnail-rows {
   display: flex; 
   justify-content: space-around; 
@@ -1186,14 +1532,71 @@ nav ul li a:hover::after{
   margin-top: -500px;
 }
 
+/*border around each project */
+.project-card {
+
+
+ 
+  border-radius: 20px; /* softer curve */
+  border: 2px solid #000000; /* light gray border */
+  /*#e0e0e0; light gray border */
+  padding: 10px;
+  width: 300px;
+  height: 560px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+
+.projectImage{
+
+    margin-left: -55px;
+    width: 190%;
+    height: 230px; /* or 220px or 250px if you want even bigger */
+    object-fit: cover; /* keeps the image nicely inside its box without stretching */
+    border-radius: 12px; /* optional, makes corners round */
+    margin-bottom: 20px;
+
+}
+
+
+.project-card:hover {
+
+  background-color: #e6f5f3;
+
+
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.hover-description {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 15px;
+  padding: 10px;
+  color: #333;
+}
+
+.project-card:hover .hover-description {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
 .thumbnail-container1{
 
-  width: 20%;
   padding: 90px;
 }
 
 .thumbnail-container1 img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 }
 
@@ -1201,29 +1604,36 @@ nav ul li a:hover::after{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   text-align: center;
+  justify-content: center;
+  width: 300px;
+  margin-left: -90px;
 
 
 }
-
 
 
 .thumbnail-container2{
 
 
-  width: 20%;
   padding: 90px;
 
 }
 
 .thumbnail-container2 img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
+
+
+
 }
 
 .thumbnail-container2 p{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   text-align: center;
+  justify-content: center;
+  width: 300px;
+  margin-left: -90px;
 
 
 }
@@ -1232,13 +1642,13 @@ nav ul li a:hover::after{
 .thumbnail-container3{
 
 
-  width: 20%;
+
   padding: 90px;
 
 }
 
 .thumbnail-container3 img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 }
 
@@ -1246,15 +1656,123 @@ nav ul li a:hover::after{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   text-align: center;
+  justify-content: center;
+  width: 300px;
+  margin-left: -90px;
 
 
+}
+
+
+.tech-tags{
+  display: flex;
+
+  justify-content: center;
+  gap: 5px;
+
+  width: 100%;
+}
+
+
+.tech-tags span {
+
+  background-color: #555;
+  color: #ffffff;
+  padding: 4px 12px;
+  margin: 5px 5px 0 4;
+  font-size: 13px;
+  border-radius: 20px;
+  line-height: 1;
+
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  white-space: nowrap; 
+
+}
+
+
+
+
+
+
+
+.tech-tags2{
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+  gap: 5px;
+
+  width: 100%;
+}
+
+
+.tech-tags2 span {
+
+  background-color: #555;
+  color: #ffffff;
+  padding: 4px 12px;
+  margin: 5px 5px 0 0;
+  font-size: 13px;
+  border-radius: 20px;
+
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  white-space: nowrap; 
+}
+
+.button-cont{
+
+
+  /*make the buttons side by side */
+  display: flex;
+
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: auto;
+
+
+
+}
+
+
+.button{
+
+  display: inline-block;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+}
+
+
+.button:hover{
+  background-color: grey;
 }
 
 
 /* Description text */
 .description1 {
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: 10px;
+  margin-top: -60px;
   color: #555;
   text-align: center;
   font-weight:bolder;
@@ -1266,7 +1784,7 @@ nav ul li a:hover::after{
 
 .description2 {
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: 10px;
+  margin-top: -60px;
   color: #555;
   text-align: center;
   font-weight:bolder;
@@ -1281,7 +1799,7 @@ nav ul li a:hover::after{
 
 .description3 {
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: 10px;
+  margin-top: -60px;
   color: #555;
   text-align: center;
   font-weight:bolder;
@@ -1336,7 +1854,9 @@ nav ul li a:hover::after{
 
 
 
-.projects-row{
+
+
+.projects-row1{
 
   display: flex; 
   justify-content: space-around; 
@@ -1347,63 +1867,139 @@ nav ul li a:hover::after{
 
 }
 
-.projects-row p{
+.projects-row1 p{
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
   text-align: center;
 
 }
 
+
+
+/*border around each project */
+.project-card1 {
+ 
+  border-radius: 20px; /* softer curve */
+  border: 2px solid #000000; /* light gray border */
+  /*#e0e0e0; light gray border */
+  padding: 10px;
+  width: 300px;
+  height: 560px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+.project-card1:hover {
+
+  background-color: #e6f5f3;
+  
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.projectImage1{
+
+
+    margin-left: -55px;
+    width: 190%;
+    height: 230px; /* or 220px or 250px if you want even bigger */
+    object-fit: cover; /* keeps the image nicely inside its box without stretching */
+    border-radius: 12px; /* optional, makes corners round */
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
 .drone{
 
-  width: 20%;
   padding: 90px;
 
   
 }
 
 .drone img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
   
 }
 
-.d1{
+
+
+.drone p{
+
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: 10px;
-  color: #555;
   text-align: center;
-  font-weight:bolder;
+  justify-content: center;
+  width: 300px;
+  margin-left: -90px;
+
+
 }
+
+
+
+
+
+
 
 .description100{
   display: none;
+}
+
+.d1{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: -60px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
 }
 
 
 .ePortfolio{
 
 
-  width: 20%;
   padding: 90px;
 
 }
 
 .ePortfolio img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 }
 
-.d2{
+
+.ePortfolio p{
+
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: 10px;
-  color: #555;
   text-align: center;
-  font-weight:bolder;
+  justify-content: center;
+  width: 300px;
+  margin-left: -90px;
 }
+
+
 
 .description200{
   display: none;
+}
+
+
+.d2{
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: -60px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
 }
 
 
@@ -1411,30 +2007,40 @@ nav ul li a:hover::after{
 .project{
 
 
-  width: 20%;
+
   padding: 90px;
 
 }
 
 .project img{
-  border: 5px solid black; /* Change 'black' to your desired color */
+  border: 5px solid #52AD9C; /* Change 'black' to your desired color */
   border-radius: 15px; 
 }
 
 
-.d3{
+.project p{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  margin-top: 10px;
-  color: #555;
   text-align: center;
-  font-weight:bolder;
+  justify-content: center;
+  width: 300px;
+  margin-left: -90px;
 }
+
 
 
 .description300{
   display: none;
 }
 
+
+.d3{
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  margin-top: -60px;
+  color: #555;
+  text-align: center;
+  font-weight:bolder;
+}
 
 
 
@@ -1528,7 +2134,9 @@ nav ul li a:hover::after{
 
 #section6{
 
-  display: flex;
+  display: none;
+
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   height: 55vh;
@@ -1559,7 +2167,8 @@ nav ul li a:hover::after{
 
 
 .extraSection{
-  display: flex;
+  display: none;
+  /*display: flex;*/
   align-items: flex-start; 
 
   justify-content: space-between;
@@ -1581,6 +2190,8 @@ nav ul li a:hover::after{
 
 
 .text p{
+
+
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
  
   margin-left: 100px;
@@ -1627,7 +2238,8 @@ nav ul li a:hover::after{
   height: auto; 
   padding: 20px 16px; 
   /*background: #FFFAF0; */
-  background: #bbeeff;
+  /*background: #bbeeff; */
+  background: #52AD9C;
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -1660,10 +2272,6 @@ a{
   width: 170px; /* Adjust based on your logo size */
   margin-bottom: 10px; /* Space below logo */
 }
-
-
-
-  
 
 
   
