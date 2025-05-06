@@ -15,7 +15,7 @@
 
 <header>
 
-    <div class = "header" id = "myHeader">
+    <div class = "header">
          <!-- Menu Button -->
         <div class="menu-button" onclick="toggleMenu()" aria-label="Toggle Menu">
             <div class="menuButton"></div>
@@ -23,19 +23,20 @@
             <div class="menuButton"></div>
         </div>
 
-        <div id = "top-header">
-            <nav>
+        <div id="top-header">
+            <nav class="navbar">
+                <div class="logo">
+                  
+                </div>
                 <ul class="nav-menu">
-                    <li><a href="#section1">Home</a></li>
+                    <!-- <li><a href="#section1">Home</a></li> -->
                     <li><a href="#section0">About Me</a></li>
                     <li><a href="#section12">Projects</a></li>
                     <li><a href="#Third">Contact</a></li>
-
-                    <!--<li class="logo"><img src="HT LOGO.png"></li> -->
                 </ul>
             </nav>
-
         </div>
+        
 
     </div>
 
@@ -80,25 +81,90 @@ menuLinks.forEach(link => {
     <!--<h1>Hi, I'm <span class="different-colour">Harishan Thilakanathan</span>, and this is my Website!</h1> -->
     <div class="me1">
 
-        <h1>Welcome to my Portfolio <br>Harishan T</h1>
+        <div class="mainText">
+            
+            
+            <h1><span id="typewriter"></span><br><span class="highlight">Welcome to my Portfolio!</span></h1>
 
-        <p>Follow the Journey!</p>
+            <!--<p>Follow the Journey!</p>-->
 
-        <img src="me.jpeg" alt="Profile" class="profile-pic2">
+            <p>Second-year Software Engineering major at the University of Guelph,<br> currently seeking Summer and Fall internship/co-op opportunities</p>
+
+            <p>Follow the Journey!</p>
+
+
+
+            <div class="footer-contactStart">
+
+                <a href="https://www.linkedin.com/in/hthilaka/">
+            
+                    <img src="linkedin.png" alt="click" style="width: 40px; height: auto">
+            
+                </a>
+            
+            
+                <a href="https://github.com/HariT10">
+            
+                    <img src="github-logo.png" alt="click" style="width: 40px; height: auto" >
+            
+                </a>
+            
+                <a href="mailto:harishan.thilak@gmail.com">
+            
+                    <img src="email.png" alt="click" style="width: 40px; height: auto" >
+            
+                </a>
+            
+            </div>
+
+
+
+        </div>
+
+        <div class="imageMain">
+            <img src="me.jpeg" alt="Profile Picture" class="profile-pic">
+        </div>
+
+
+        
 
 
     </div>
-    
-  
-
-
-
-    <!--<p> Software Engineering student at the University of Guelph</p>-->
-
-    <img src="me.jpeg" alt="Profile" class="profile-pic">
 
 
 </section>
+
+
+<div class="imageMain2">
+    <img src="me.jpeg" alt="Profile Picture" class="profile-pic5">
+</div>
+
+
+
+
+
+
+
+
+<script>
+    const text = "Hi, I'm Harishan Thilak 👋";
+    const speed = 100; // typing speed in ms
+  
+    let i = 0;
+  
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typewriter").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  
+    // Start typing when page loads
+    window.onload = typeWriter;
+
+</script>
+  
 
 
 
@@ -111,59 +177,33 @@ menuLinks.forEach(link => {
 
 <div class="aboutMe">
 
-    <p class="text1">Hi, my name is Harishan Thilakanathan, and welcome to my portfolio website.
-        I am currently in my second year studying Software Engineering at the University of Guelph. 
-        This site showcases various projects, experiences, skills, and other noteworthy 
-        aspects of my life. My goal is to stay consistent and disciplined in developing and 
-        creating, and this website reflects that journey.<br>
-        <br>The Projects section highlights key software and coding projects I have worked on or 
-        am currently developing. It also includes an extended section featuring smaller projects 
-        and school assignments that I’ve particularly enjoyed working on.<br>
-        <br>I have experience with programming languages such as C, Java, JavaScript, HTML/CSS, and Python. 
-        Additionally, I am familiar with tools like GitHub, GitLab, Trello, WordPress, Linux environments, 
-        and the Adobe Suite. I also have experience with agile methodologies and team collaboration, thanks 
-        to the Software Design classes I have taken.<br>
-        <br>Outside of coding, I am passionate about soccer, basketball, going on runs, and love video creation, 
-        including video editing and filming.
-    </p>
+
+    <div class="text1">
+        <p>Hi, my name is Harishan Thilak, and this is my portfolio website. </p>
+
+        <p>I created this website to showcase my journey through my personal projects and other experiences. I want to stay consistent in developing and creating so I can continue to learn and improve. This summer I will be focusing on building various projects and gaining experience in the real world. I will be learning more about applying machine learning when working on my soccer analysis project. 
+
+        </p>
+
+        <p>The project section has projects I completed and am currently working on. I will be adding other sections as time goes on. </p>
+
+        <p>Some of my other interests include soccer, basketball, running, and video editing.  </p>
+    </div>
 
     <div class="text">
+        <p>Hi, my name is Harishan Thilak, and this is my portfolio website. </p>
 
-    
-        <p> Hi, my name is Harishan Thilakanathan, and welcome to my portfolio website. 
-            I am currently in my second year studying Software Engineering at the University of Guelph. 
-            This site showcases various projects, experiences, skills, and other noteworthy 
-            aspects of my life. My goal is to stay consistent and disciplined in developing and 
-            creating, and this website reflects that journey.
-       </p>
-   
-       <p>The Projects section highlights key software and coding projects I have worked on or 
-        am currently developing. It also includes an extended section featuring smaller projects 
-        and school assignments that I’ve particularly enjoyed working on.
-       </p>
-   
-       <p>
-        I have experience with programming languages such as C, Java, JavaScript, HTML/CSS, and Python. 
-        This is from doing various school projects, personal projects, and work experience.
-        Additionally, I am familiar with tools like GitHub, GitLab, Trello, WordPress, Linux environments, 
-        and the Adobe Suite. I also have experience with agile methodologies and team collaboration, thanks 
-        to the Software Design classes I have taken.
+        <p>I created this website to showcase my journey through my personal projects and other experiences. I want to stay consistent in developing and creating so I can continue to learn and improve. This summer I will be focusing on building various projects and gaining experience in the real world. I will be learning more about applying machine learning when working on my soccer analysis project. 
 
-       </p>
+        </p>
 
+        <p>The project section has projects I completed and am currently working on. I will be adding other sections as time goes on.
 
-       <p>Outside of coding, I am passionate about soccer, basketball, going on runs, and love video creation, 
-        including video editing and filming.</p>
-
-
+        Some of my other interests include soccer, basketball, running, and video editing.  </p>
     </div>
-    
 
     <div class="me">
-
-        <img src="beachMe.jpeg">
-
-
+        <img src="beachMe.jpeg" alt="Picture of Harishan">
     </div>
 
 
@@ -171,62 +211,139 @@ menuLinks.forEach(link => {
 
 
 <section id="section12">
-    <h1>My Projects</h1>
+    <h1>Projects</h1>
 </section>
 
 
 <div class="thumbnail-rows">
 
-    <div class="thumbnail-container1">
-        <img src="cmlsNew.png" alt="Thumbnail1" style="width:100%" >
-        <p class="description1">cMLS <br> </p>
 
-        <p class="description10">cMLS <br> </p>
+    <div class="project-card">
 
-        <p>This website will be used to explore all three of the Canadian teams in Major League Soccer (MLS).
-            Users can also search for players in the MLS.
-        </p>
+        <div class="thumbnail-container1">
 
-        <p> Languages Used: HTML, CSS, and JavaScript
-        </p>
+            <p class="description3">Alka's Jewellery<br></p>
+
+            <p class="description30">Alka's Jewellery<br></p>
+
+
+
+            <img src="alk1.png" alt="Thumbnail3" class = "projectImage">
+            
+
+
+            <p>Freelance job that required me to develop and launch a custom jewellery application</p>
+
+            <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class = "button-cont">
+
+                <a href="https://github.com/HariT10/cMLS" target="_blank" class="button">GitHub</a>
+                
+                <a href="https://alkajewellery.netlify.app/" target="_blank" class="button">View</a>
+
+            </div>
+
+            
+            <!--
+            <div class="hover-description">
+                This project analyzes MLS teams and lets users search for players.
+              </div>
+            
+            -->
+
+        </div>
 
         
+          
+
     </div>
 
-   
+
+    <div class="project-card">
+
+        <div class="thumbnail-container2">
+
+            <p class="description2">HT Orders</p>
+            <p class="description20">HT Orders</p>
+
+
+            <img src="HTOrder.png" alt="Thumbnail2" class = "projectImage">
+            
+            
+    
+            <p>Builiding a food ordering application to gain more experience buildinga full stack proejct (In-Progress) </p>
+    
+            <div class="tech-tags">
+                <span>Java</span>
+                <span>Firebase</span>
+                <span>Android Studio</span>
+            </div>
+
+
+            <div class = "button-cont">
+
+                <a href="https://github.com/HariT10/cMLS" target="_blank" class="button">GitHub</a>
+                
+                <a href="https://harit10.github.io/cMLS/" target="_blank" class="button">View</a>
+
+            </div>
+
+        </div>
+
+
+       
+
+
+    </div>
+
+
+
+    <div class="project-card">
+
+
+        <div class="thumbnail-container3">
+
+            <p class="description1">Soccer Analysis</p>
+            <p class="description10">cMLS</p>
+
+
+            <img src="soccerYOLO1.png" alt="Thumbnail1" class = "projectImage" >
+            
+            
+    
+            <p>Using machine learning to help anaylize soccer clips/video (In-Progress)</p>
+            
+
+            <div class="tech-tags">
+                <span>Python</span>
+                <span>YOLO</span>
+                <span>Google Collab</span>
+            </div>
+
+
+
+            <div class = "button-cont">
+
+                <a href="https://github.com/HariT10/cMLS" target="_blank" class="button">GitHub</a>
+                
+                <a href="https://harit10.github.io/cMLS/" target="_blank" class="button">View</a>
+
+            </div>
+
+
+            
+
+        </div>
+
+
+    </div>
 
     
-    <div class="thumbnail-container2">
-        <img src="app.png" alt="Thumbnail2" style="width:100%" onclick="openModal2()">
-        <p class="description2">Food Ordering App <br></p>
-
-        <p class="description20">Food Ordering App <br></p>
-
-        <p>Built an android based food ordering application using Android Studio.
-            Key features include a user-friendly dashboard, categorized food menus, 
-            shopping cart functionality, and secure authentication</p>
-
-
-    </div>
-
-    
-
-
-    <div class="thumbnail-container3">
-        <img src="alk1.png" alt="Thumbnail3" style="width:100%" onclick="openModal3()">
-        <p class="description3">Alka's Jewellery<br></p>
-
-        <p class="description30">Alka's Jewellery<br></p>
-
-
-        <p>Developed and launched a custom jewellery website for a client, enabling them to showcase and sell handmade jewellery online</p>
-
-        <p> Languages Used: HTML, CSS, and JavaScript
-        </p>
-
-    </div>
-
-
 
 </div>
 
@@ -237,59 +354,146 @@ menuLinks.forEach(link => {
     
     
 
-
+ 
 </section>
 
 
 <section id="section3">
-    <h1>Smaller Projects</h1>
+    <h1>More Projects</h1>
 </section>
 
 
-<div class="projects-row">
+<div class="projects-row1">
 
-    <div class="drone">
-        <img src="drone3.png" alt="Thumbnail1" style="width:100%" >
-        <p class="d1">Drones<br> </p>
 
-        <p class="description100">Drones<br> </p>
+    <div class="project-card1">
 
-        <p>This was actually one of the first websites I made, you can probably tell by the low quality.</p>
+        <div class="drone">
 
-        <p> Languages Used: HTML, CSS, and JavaScript
-        </p>
+            <p class="d1">VCParser<br> </p>
+    
+            <p class="description100">VCParser<br> </p>
+
+
+            <img src="vcp.png" alt="Thumbnail1" class = "projectImage1">
+            
+    
+            <p>Developed a C parser to parse, validate, write, and manipulate vCard files, by following RFC 6350 specifications, all done in a Docker environment</p>
+            
+            <div class="tech-tags2">
+                <span>C</span>
+                <span>Python</span>
+                <span>SQL</span>
+
+            </div>
+
+            <div class="tech-tags2">
+              
+                <span>Makefile</span>
+                <span>Docker</span>
+                <span>MariaDB</span>
+            </div>
+
+            <div class = "button-cont">
+
+                <a href="https://github.com/HariT10/cMLS" target="_blank" class="button">GitHub</a>
+                
+                <a href="https://harit10.github.io/cMLS/" target="_blank" class="button">View</a>
+
+            </div>
+
+            
+            
+    
+        </div>
 
     </div>
 
     
+    <div class="project-card1">
+
+
+        <div class="ePortfolio">
+
+            <p class="d2">ePortfolio <br></p>
+    
+            <p class="description200">ePortfolio <br></p>
+
+
+            <img src="a3java.png" alt="Thumbnail2" class = "projectImage1">
+            
+    
+            <p> Created a portfolio application to manage investments, including stock and mutual fund transactions</p>
+            
+            <div class="tech-tags2">
+                <span>Java</span>
+                <span>GitHub</span>
+              
+            </div>
+
+            <div class = "button-cont">
+
+                <a href="https://github.com/HariT10/cMLS" target="_blank" class="button">GitHub</a>
+                
+                <a href="https://harit10.github.io/cMLS/" target="_blank" class="button">View</a>
+
+            </div>
+          
+        </div>
+
+        
+
+    </div>
+    
 
     
-    <div class="ePortfolio">
-        <img src="a3java.png" alt="Thumbnail2" style="width:100%" onclick="openModal2()">
-        <p class="d2">ePortfolio <br></p>
-
-        <p class="description200">ePortfolio <br></p>
+    
 
 
-        <p>This was an assignement from my Object-Oriented Programming class.</p>
+    <div class="project-card1">
 
-        <p> Languages Used: Java
-        </p>
+
+        <div class="project">
+
+
+            <p class="d3">cMLS<br></p>
+    
+            <p class="description300">cMLS<br></p>
+
+
+            <img src="cmlsNew.png" alt="Thumbnail3" class = "projectImage1">
+            
+            <p>Created a MLS (Major League Soccer) web application focused on the 3 Canadian MLS teams</p>
+
+            <div class="tech-tags2">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>CSV</span>
+              
+            </div>
+
+            <div class = "button-cont">
+
+                <a href="https://github.com/HariT10/cMLS" target="_blank" class="button">GitHub</a>
+                
+                <a href="https://harit10.github.io/cMLS/" target="_blank" class="button">View</a>
+
+            </div>
+    
+    
+        </div>
+
+        
 
     </div>
 
 
-
-    <div class="project">
-        <img src="Cproject.png" alt="Thumbnail3" style="width:100%" onclick="openModal3()">
-        <p class="d3">Car Store<br></p>
-
-        <p class="description300">Car Store<br></p>
+    
 
 
-        <p><p> Languages Used: C, Makefile
-        </p></p>
-    </div>
+
+    
 
 
 
@@ -392,7 +596,6 @@ menuLinks.forEach(link => {
 
     <footer class="footer">
 
-  
 
         <div class="logo-container">
     
@@ -424,9 +627,8 @@ menuLinks.forEach(link => {
 
             </a>
 
-
-
         </div>
+
         <p>© 2025 Harishan Thilakanathan. All rights reserved. </p>
     </footer>
     
