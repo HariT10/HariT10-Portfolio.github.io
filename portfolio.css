@@ -246,10 +246,11 @@ nav ul li a:hover::after{
   text-align: center;
   margin-top: 30px;
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
-  font-size: 17px;
+  font-size: 20px;
   margin-left: 60px;
   margin-right: 60px;
   text-decoration: none;
+  font-weight: normal;
 }
 
 .me1 p{
