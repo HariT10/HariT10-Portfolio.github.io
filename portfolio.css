@@ -66,6 +66,8 @@
 
 
 }
+
+
   
 
 
@@ -238,7 +240,20 @@ nav ul li a:hover::after{
   font-size: 19px;
 }
 
+
+.phoneText{
+
+  text-align: center;
+  margin-top: 30px;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+  font-size: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
 .me1 p{
+
+  display: none;
 
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
@@ -435,7 +450,7 @@ nav ul li a:hover::after{
   border: 2px solid #000000; /* light gray border */
   padding: 10px;
   width: 270px;
-  height: 500px;
+  height: 570px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -1358,6 +1373,12 @@ nav ul li a:hover::after{
 
 .highlight{
   font-size: 30px;
+}
+
+
+.phoneText{
+
+  display: none;
 }
 
 
