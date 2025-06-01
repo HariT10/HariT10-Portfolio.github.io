@@ -4,24 +4,70 @@
         <title>Harishan's Portfolio </title>
         <link rel="stylesheet" href="portfolio.css" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
         
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
 
     </head>
 
     
+
+      
+<body>
+
+
+    <div id="particles-js"></div>
+
 
 
 <!--TOP MENUE-->
 
 <header>
 
+    <div class="mobile-menu-wrapper">
+        <div class="menu-header">
+          <div class="username">@harishan</div>
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <a href="#github">Home</a>
+          <a href="#linkedin">CV</a>
+          <a href="#linkedin">Experince</a>
+          <a href="#work" class="sub-item">SACHAYS</a>
+          <a href="#work" class="sub-item">University of Guelph</a>
+          <a href="#linkedin">Projects</a>
+          <a href="#work" class="sub-item">Alka's Jewellery</a>
+          <a href="#work" class="sub-item">cMLS</a>
+          <a href="#linkedin">Gallery</a>
+          <a href="#linkedin">Connect</a>
+          <a href="#work" class="sub-item">harishan.thilak@gmail.com</a>
+          <a href="#work" class="sub-item">Linkedin</a>
+          <a href="#work" class="sub-item">GitHub/a>
+          <a href="#work" class="sub-item">Youtube</a>
+        </div>
+      </div>
+      
+
     <div class = "header">
          <!-- Menu Button -->
+        <!--
+
+
         <div class="menu-button" onclick="toggleMenu()" aria-label="Toggle Menu">
             <div class="menuButton"></div>
             <div class="menuButton"></div>
             <div class="menuButton"></div>
         </div>
+         
+        
+        -->
+        
 
         <div id="top-header">
             <nav class="navbar">
@@ -92,7 +138,6 @@ menuLinks.forEach(link => {
 
             <div class="phoneText">
 
-                <h8>Second-year Software Engineering major at the University of Guelph, currently seeking Summer and Fall internship/co-op opportunities</p>
 
             </div>
 
@@ -147,7 +192,14 @@ menuLinks.forEach(link => {
     <img src="me.jpeg" alt="Profile Picture" class="profile-pic5">
 </div>
 
+<div class="contactMe">
+    
+    
+    <a href="https://www.linkedin.com/in/hthilaka/" target="_blank" class="linkedin-button">LinkedIn</a>
 
+    <a href="https://www.linkedin.com/in/hthilaka/" target="_blank" class="linkedin-button">My GitHub</a>
+
+</div>
 
 
 
@@ -155,7 +207,8 @@ menuLinks.forEach(link => {
 
 
 <script>
-    const text = "Hi, I'm Harishan Thilak 👋";
+    //const text = "Harishan Thilak 👋";
+    const text = "Harishan Thilak";
     const speed = 100; // typing speed in ms
   
     let i = 0;
@@ -645,8 +698,45 @@ menuLinks.forEach(link => {
     
 
 
+    <script>
+        particlesJS("particles-js", {
+          particles: {
+            number: { value: 50 },
+            size: { value: 3 },
+            color: { value: "#bbbbbb" },
+            opacity: { value: 0.4 },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#000000",
+              opacity: 0.5,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 10,           
+              direction: "none",
+              out_mode: "out"
+            }
+          },
+          interactivity: {
+            events: {
+              onhover: { enable: true, mode: "repulse" }
+            }
+          },
+          retina_detect: true
+        });
+    </script>
+      
+      
 
 
+      <script>
+        window.addEventListener("load", function() {
+          document.body.classList.add("loaded");
+        });
+      </script>
+      
  
 
 </body>
