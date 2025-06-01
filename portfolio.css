@@ -18,7 +18,28 @@
     box-sizing: border-box;
 
 
+    opacity: 0;
+    transition: opacity 2s ease-in;
+
+   
+    
+
+
   }
+
+  body.loaded {
+    opacity: 1;
+  }
+
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
 
 
 
@@ -55,7 +76,9 @@
   }
 
 #typewriter{
-  font-size: 25px;
+  font-size: 45px;
+
+  font-weight: 500;
 
 }
 
@@ -74,6 +97,98 @@
 
 /* HEADER */
 
+/* Parent wrapper centered and styled */
+.mobile-menu-wrapper {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #5F9EA0;
+  padding: 10px 50px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Horizontal bar */
+.menu-header {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #5F9EA0;
+
+  min-width: 190px;
+
+}
+
+/* Text */
+.username {
+  font-weight: bold;
+  color: white;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+}
+
+/* Menu icon */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Hidden by default, shown when toggled */
+.nav-menu {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* below the top bar */
+  right: 20px;
+  background-color: white;
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  width: 230px;
+  text-align: left;
+}
+
+/* Base link style (probably already in your CSS) */
+.nav-menu a {
+  padding: 12px 20px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  font-weight: 400;
+}
+
+/* Sub-item style for indented look */
+.nav-menu a.sub-item {
+  padding-left: 50px;  /* ⬅️ Indent it */
+  font-size: 0.95em;   /* Optional: slightly smaller */
+  color: #000000;         /* Optional: lighter text */
+}
+
+
+.nav-menu a:hover {
+  background-color: #f0f0f0;
+  color: #4f8ef7;
+}
+
+.nav-menu.show {
+  display: flex;
+}
+
+
+
 
 
 
@@ -91,24 +206,25 @@
   padding-top: 102px;
 }
 
-
 .nav-menu {
-  display: none; /* Menu is hidden by default */
-  flex-direction: column;
-  background-color: #52AD9C;
-  position: relative;
+  display: none;
+  position: absolute;
   top: 60px;
-  left: 0;
-  width: 100%;
-  padding: 10px 1;
-  z-index: 999;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  right: 20px;
+  background-color: white;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .nav-menu.show {
-  display: flex; /* Show the menu when 'show' class is added */
+  display: flex;
 }
 
+.menu-button {
+  display: flex;
+}
 
 /* ROW HEADER */
 nav ul{
@@ -310,7 +426,7 @@ nav ul li a:hover::after{
 
   margin: 0 auto;
 
-  margin-top: -70px;
+  margin-top: -210px;
 
 
 
@@ -321,6 +437,38 @@ nav ul li a:hover::after{
 }
 
 
+.contactMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+
+}
+
+
+.linkedin-button {
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  display: inline-block;
+  background-color: #FFF8DC;  /* LinkedIn blue */
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.linkedin-button:hover {
+  background-color: gray;
+}
+
 
 
 
@@ -330,7 +478,7 @@ nav ul li a:hover::after{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55vh;
+  height: 50vh;
 
   overflow-x: hidden;
 
@@ -352,7 +500,7 @@ nav ul li a:hover::after{
 
   text-align: justify;
 
-  margin-top: -60px;
+  margin-top: -110px;
 
 
 }
@@ -440,7 +588,7 @@ nav ul li a:hover::after{
 
   display: block;
 
-  margin-top: -280px;
+  margin-top: -370px;
 
 
 }
@@ -805,7 +953,7 @@ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 
   display: block;
 
-  margin-top: -280px;
+  margin-top: -370px;
 
   
 
@@ -1199,6 +1347,31 @@ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scrolling */
 
+    
+
+  }
+
+
+  .mobile-menu-wrapper{
+
+    display: none;
+
+  }
+
+
+  #particles-js {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+
+  .contactMe{
+    display: none;
   }
 
   /* PICUTRE */
@@ -1478,6 +1651,8 @@ nav ul li a:hover::after{
 
   margin-left: -50px;
 
+  
+
 
 }
 
@@ -1489,6 +1664,8 @@ nav ul li a:hover::after{
   text-align: justify;
 
   margin-top: -140px;
+
+    
 
 }
 
