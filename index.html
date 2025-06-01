@@ -12,6 +12,7 @@
 
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
     </head>
@@ -35,21 +36,73 @@
           <div class="username">@harishan</div>
           <div class="menu-icon" onclick="toggleMenu()">☰</div>
         </div>
+
         <div class="nav-menu" id="navMenu">
-          <a href="#github">Home</a>
-          <a href="#linkedin">CV</a>
-          <a href="#linkedin">Experince</a>
-          <a href="#work" class="sub-item">SACHAYS</a>
-          <a href="#work" class="sub-item">University of Guelph</a>
-          <a href="#linkedin">Projects</a>
-          <a href="#work" class="sub-item">Alka's Jewellery</a>
-          <a href="#work" class="sub-item">cMLS</a>
-          <a href="#linkedin">Gallery</a>
-          <a href="#linkedin">Connect</a>
-          <a href="#work" class="sub-item">harishan.thilak@gmail.com</a>
-          <a href="#work" class="sub-item">Linkedin</a>
-          <a href="#work" class="sub-item">GitHub/a>
-          <a href="#work" class="sub-item">Youtube</a>
+            
+
+            <a href="#github" class="navIcon">
+
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+
+            <a href="#linkedin">
+
+
+                <i class="fa-solid fa-file"></i>
+
+                <span>CV</span>
+
+
+            </a>
+            <a href="#linkedin">Experince</a>
+            <a href="#work" class="sub-item">SACHAYS</a>
+            <a href="#work" class="sub-item">
+
+                <i class="fa-solid fa-school"></i>
+
+
+                <span>University of Guelph</span>
+
+
+
+            </a>
+            <a href="#linkedin">
+
+                <i class="fa-solid fa-bars-progress"></i>
+
+                <span>Projects</span>
+
+
+            </a>
+            <a href="#work" class="sub-item">Alka's Jewellery</a>
+            <a href="https://cmls.vercel.app/" class="sub-item">cMLS</a>
+            <a href="#linkedin">Gallery</a>
+            <a href="#linkedin">
+
+                <i class="fa-solid fa-network-wired"></i>
+
+                <span>Connect</span>
+            </a>
+            <a href="#work" class="sub-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <span>harishan.thilak@gmail.com</span>
+
+
+            </a>
+            <a href="https://www.linkedin.com/in/hthilaka/" class="sub-item">Linkedin</a>
+            <a href="https://github.com/HariT10" class="sub-item">
+
+                <i class="fa-solid fa-code-branch"></i>
+
+                <span>GitHub</span>
+
+
+            </a>
+            <a href="http://youtube.com/@HarishanT/featured" class="sub-item">Youtube</a>
         </div>
       </div>
       
@@ -209,7 +262,7 @@ menuLinks.forEach(link => {
 <script>
     //const text = "Harishan Thilak 👋";
     const text = "Harishan Thilak";
-    const speed = 100; // typing speed in ms
+    const speed = 200; // typing speed in ms
   
     let i = 0;
   
@@ -222,7 +275,27 @@ menuLinks.forEach(link => {
     }
   
     // Start typing when page loads
-    window.onload = typeWriter;
+    //window.onload = typeWriter;
+
+    // Start typing 1 second after page loads
+    window.onload = function() {
+
+        setTimeout(typeWriter, 500); // 1000 milliseconds = 1 second
+
+
+    };
+
+    window.onload = function() {
+
+        setTimeout(() => {
+
+            document.querySelector(".highlight").classList.add("show");
+            typeWriter(); 
+
+        }, 1000); // wait 1 second
+    };
+
+
 
 </script>
   
