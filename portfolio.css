@@ -107,7 +107,7 @@
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: #5F9EA0;
+  background: #52AD9C;
   padding: 10px 50px;
   border-radius: 12px;
   display: flex;
@@ -478,7 +478,7 @@ nav ul li a:hover::after{
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
   display: inline-block;
-  background-color: #FFF8DC;  /* LinkedIn blue */
+  background-color: #52AD9C; 
   color: black;
   padding: 10px 20px;
   font-weight: bold;
