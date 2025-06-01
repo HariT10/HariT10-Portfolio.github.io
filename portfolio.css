@@ -80,6 +80,8 @@
 
   font-weight: 500;
 
+
+
 }
 
 
@@ -124,23 +126,23 @@
   width: 100%;
   color: #5F9EA0;
 
-  min-width: 190px;
+  min-width: 250px;
 
 }
 
 /* Text */
 .username {
   font-weight: bold;
-  color: white;
+  color: black;
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
 
 }
 
 /* Menu icon */
 .menu-icon {
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
 /* Hidden by default, shown when toggled */
@@ -157,8 +159,9 @@
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   z-index: 999;
-  width: 230px;
+  width: 290px;
   text-align: left;
+
 }
 
 /* Base link style (probably already in your CSS) */
@@ -188,7 +191,18 @@
 }
 
 
+/*the icon*/
+.navIcon{
 
+  display: inline-flex;
+  align-items: center;
+  gap: 6000px; /* space between icon and text */
+  text-decoration: none;
+  color: inherit; /* keeps same text color */
+  font-size: 16px;
+
+
+}
 
 
 
@@ -352,9 +366,18 @@ nav ul li a:hover::after{
 
 }
 
-.highlight{
+.highlight {
   font-size: 19px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in, transform 1s ease-in;
 }
+
+.highlight.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 .phoneText{
