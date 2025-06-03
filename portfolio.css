@@ -132,9 +132,11 @@
 
 /* Text */
 .username {
-  font-weight: bold;
-  color: black;
+
   font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+
+  color: black;
 
 }
 
@@ -175,7 +177,7 @@
 
 /* Sub-item style for indented look */
 .nav-menu a.sub-item {
-  padding-left: 50px;  /* ⬅️ Indent it */
+  padding-left: 50px; 
   font-size: 0.95em;   /* Optional: slightly smaller */
   color: #000000;         /* Optional: lighter text */
 }
@@ -367,6 +369,10 @@ nav ul li a:hover::after{
 }
 
 .highlight {
+
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;;
+
+  
   font-size: 19px;
   opacity: 0;
   transform: translateY(20px);
@@ -481,11 +487,10 @@ nav ul li a:hover::after{
   background-color: #52AD9C; 
   color: black;
   padding: 10px 20px;
-  font-weight: bold;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  font-family: 'Inter', sans-serif;
+  
 }
 
 .linkedin-button:hover {
